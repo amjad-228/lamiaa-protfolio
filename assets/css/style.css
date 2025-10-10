@@ -2807,11 +2807,15 @@ h2.section-title span {
     margin-bottom: 15px;
 }
 
-.footer-laptop-icon {
+.footer-logo {
     display: inline-block;
-    font-size: 40px;
-    color: #8B5CF6;
     margin-top: 5px;
+}
+
+.footer-logo img {
+    max-width: 60px;
+    height: auto;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .footer-nav h3 {
@@ -2868,25 +2872,89 @@ h2.section-title span {
 
 .social-icon {
     display: inline-flex;
-    width: 45px;
-    height: 45px;
-    background: #fff;
-    border: 2px solid #2c3e50;
-    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border: none;
+    border-radius: 16px;
     align-items: center;
     justify-content: center;
-    color: #2c3e50;
-    font-size: 18px;
-    transition: all 0.3s ease;
+    color: #6c757d;
+    font-size: 20px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     text-decoration: none;
     flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.social-icon::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.6s;
+}
+
+.social-icon:hover::before {
+    left: 100%;
 }
 
 .social-icon:hover {
-    background: #2c3e50;
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Email Icon - Modern Blue */
+.social-icon:has(.bi-envelope) {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #fff;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(44, 62, 80, 0.3);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.social-icon:has(.bi-envelope):hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+/* LinkedIn Icon - Professional Gradient */
+.social-icon:has(.bi-linkedin) {
+    background: linear-gradient(135deg, #0077b5 0%, #005885 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3);
+}
+
+.social-icon:has(.bi-linkedin):hover {
+    background: linear-gradient(135deg, #006ba3 0%, #004d73 100%);
+    box-shadow: 0 12px 30px rgba(0, 119, 181, 0.4);
+}
+
+/* WhatsApp Icon - Vibrant Green */
+.social-icon:has(.bi-whatsapp) {
+    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.social-icon:has(.bi-whatsapp):hover {
+    background: linear-gradient(135deg, #1ea952 0%, #0f6b5c 100%);
+    box-shadow: 0 12px 30px rgba(37, 211, 102, 0.4);
+}
+
+/* X (Twitter) Icon - Modern Black */
+.social-icon:has(.bi-twitter) {
+    background: linear-gradient(135deg, #000000 0%, #434343 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon:has(.bi-twitter):hover {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* Custom X (Twitter) icon */
@@ -2894,6 +2962,46 @@ h2.section-title span {
     content: "X";
     font-weight: bold;
     font-family: Arial, sans-serif;
+}
+
+/* Modern pulse animation */
+@keyframes socialPulse {
+    0% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+    50% {
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.social-icon:active {
+    animation: socialPulse 0.3s ease;
+}
+
+/* Modern glassmorphism effect */
+.social-icon {
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+/* Subtle glow effect */
+.social-icon:has(.bi-envelope) {
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3), 0 0 0 1px rgba(102, 126, 234, 0.1);
+}
+
+.social-icon:has(.bi-linkedin) {
+    box-shadow: 0 4px 15px rgba(0, 119, 181, 0.3), 0 0 0 1px rgba(0, 119, 181, 0.1);
+}
+
+.social-icon:has(.bi-whatsapp) {
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3), 0 0 0 1px rgba(37, 211, 102, 0.1);
+}
+
+.social-icon:has(.bi-twitter) {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1);
 }
 
 .footer-bottom {
@@ -2926,8 +3034,8 @@ h2.section-title span {
         font-size: 16px;
     }
     
-    .footer-laptop-icon {
-        font-size: 35px;
+    .footer-logo img {
+        max-width: 50px;
     }
     
     .footer-nav h3,
@@ -2941,11 +3049,16 @@ h2.section-title span {
     }
     
     .social-icon {
-        width: 45px;
-        height: 45px;
-        line-height: 41px;
-        font-size: 18px;
+        width: 48px;
+        height: 48px;
+        font-size: 19px;
         margin: 0 8px;
+        border-radius: 14px;
+    }
+    
+    .footer-social {
+        flex-wrap: wrap;
+        gap: 10px;
     }
 }
 
@@ -2962,8 +3075,8 @@ h2.section-title span {
         font-size: 14px;
     }
     
-    .footer-laptop-icon {
-        font-size: 30px;
+    .footer-logo img {
+        max-width: 45px;
     }
     
     .footer-nav h3,
@@ -2977,11 +3090,17 @@ h2.section-title span {
     }
     
     .social-icon {
-        width: 40px;
-        height: 40px;
-        line-height: 36px;
-        font-size: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
         margin: 0 5px;
+        border-radius: 12px;
+    }
+    
+    .footer-social {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
     }
 }
 
@@ -4979,55 +5098,6 @@ input.error,
 textarea.error {
   border:1px solid #f03838 !important;
 }
-/*** 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-	background-image: url(../img/Footer.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 0 0 20px 0;
-    color: #fff;
-    font-size: 14px;
-    height: 230px;
-}
-#footer .footer-top {
-  padding: 20px 0;
-}
-
-#footer .footer-top .social-links a {
-  font-size: 26px;
-  display: inline-block;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 40px;
-  height: 40px;
-  transition: 0.3s;
-}
-#footer .footer-top .social-links a:hover {
-    background: #422960;
-    color: #fff;
-    text-decoration: none;
-}
-#footer .copyright {
-    text-align: center;
-}
-#footer .copyright a {
-    color: #fff;
-}
-#footer .img-wrapper img {
-    height: 50px;
-}
-#footer .social-links {
-    text-align: left;
-    direction: ltr;
-}
 
 @media (min-width:992px) and (max-width:1399px) {
 	.list-about {
@@ -5087,24 +5157,6 @@ textarea.error {
 	}
 	.call_us {
 		padding: 15px 15px 50px;
-	}
-	#footer {
-		font-size: 14px;
-		height: auto;
-		background-image: none;
-		background-color: #71489e;
-	}
-	#footer .social-links{
-		text-align: center;
-	}
-	.social-links {
-		text-align: center;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	.img-wrapper.f-logo {
-		text-align: center!important;
-		margin: 20px 0 0 0;
 	}
 	.list-about {
 		height: auto;

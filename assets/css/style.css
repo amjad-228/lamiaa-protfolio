@@ -2957,6 +2957,18 @@ h2.section-title span {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
+/* GitHub Icon - Professional Dark */
+.social-icon:has(.bi-github) {
+    background: linear-gradient(135deg, #333333 0%, #000000 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3);
+}
+
+.social-icon:has(.bi-github):hover {
+    background: linear-gradient(135deg, #444444 0%, #1a1a1a 100%);
+    box-shadow: 0 12px 30px rgba(51, 51, 51, 0.4);
+}
+
 /* Custom X (Twitter) icon */
 .social-icon .bi-twitter::before {
     content: "X";
@@ -3002,6 +3014,259 @@ h2.section-title span {
 
 .social-icon:has(.bi-twitter) {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:has(.bi-github) {
+    box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3), 0 0 0 1px rgba(51, 51, 51, 0.1);
+}
+
+/* Ultra Modern Contact Icons */
+.contact-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(145deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contact-icon-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+}
+
+.contact-icon-link:hover::before {
+    transform: translateX(100%);
+}
+
+.contact-icon-link::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-icon-link:hover::after {
+    opacity: 1;
+}
+
+.contact-icon-link:hover {
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 0 0 1px rgba(255, 255, 255, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.contact-icon-link:hover .contact-icon {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+}
+
+/* Full Contact Item Link */
+.contact-item-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background: linear-gradient(145deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+    border: none;
+    border-radius: 20px;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 10px 0;
+}
+
+.contact-item-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+}
+
+.contact-item-link:hover::before {
+    transform: translateX(100%);
+}
+
+.contact-item-link::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    border-radius: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.contact-item-link:hover::after {
+    opacity: 1;
+}
+
+.contact-item-link:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.contact-item-link:hover .contact-text {
+    color: #fff !important;
+    transform: translateX(5px);
+}
+
+.contact-item-link:hover .contact-icon-link {
+    transform: scale(1.1);
+}
+
+.contact-item-link:hover .contact-icon {
+    transform: scale(1.2) rotate(5deg);
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
+}
+
+/* Enhanced hover effects for full contact item */
+.contact-item-link .contact-text {
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    flex: 1;
+    margin-right: 15px;
+}
+
+.contact-item-link .contact-icon-link {
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Add subtle animation to the text */
+.contact-item-link:hover .contact-text::after {
+    content: ' →';
+    opacity: 0.7;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Email Link Styling */
+.email-link {
+    background: linear-gradient(145deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+    box-shadow: 
+        0 8px 32px rgba(102, 126, 234, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.email-link:hover {
+    background: linear-gradient(145deg, #5a6fd8 0%, #6a4190 50%, #e085f0 100%) !important;
+    box-shadow: 
+        0 20px 40px rgba(102, 126, 234, 0.6),
+        0 0 0 1px rgba(102, 126, 234, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+/* LinkedIn Link Styling */
+.linkedin-link {
+    background: linear-gradient(145deg, #0077b5 0%, #005885 50%, #003d5c 100%) !important;
+    box-shadow: 
+        0 8px 32px rgba(0, 119, 181, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+}
+
+.linkedin-link:hover {
+    background: linear-gradient(145deg, #006ba3 0%, #004d73 50%, #002d42 100%) !important;
+    box-shadow: 
+        0 20px 40px rgba(0, 119, 181, 0.6),
+        0 0 0 1px rgba(0, 119, 181, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Email Icon - Electric Blue */
+.contact-icon-link:has(.bi-envelope) {
+    background: linear-gradient(145deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    box-shadow: 
+        0 8px 32px rgba(102, 126, 234, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon-link:has(.bi-envelope):hover {
+    background: linear-gradient(145deg, #5a6fd8 0%, #6a4190 50%, #e085f0 100%);
+    box-shadow: 
+        0 20px 40px rgba(102, 126, 234, 0.6),
+        0 0 0 1px rgba(102, 126, 234, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* X (Twitter) Icon - Dark Elegance */
+.contact-icon-link:has(.bi-twitter) {
+    background: linear-gradient(145deg, #000000 0%, #1a1a1a 50%, #2d2d2d 100%);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(255, 255, 255, 0.1),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.contact-icon-link:has(.bi-twitter):hover {
+    background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 50%, #404040 100%);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.7),
+        0 0 0 1px rgba(255, 255, 255, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+/* LinkedIn Icon - Professional Blue */
+.contact-icon-link:has(.bi-linkedin) {
+    background: linear-gradient(145deg, #0077b5 0%, #005885 50%, #003d5c 100%);
+    box-shadow: 
+        0 8px 32px rgba(0, 119, 181, 0.4),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon-link:has(.bi-linkedin):hover {
+    background: linear-gradient(145deg, #006ba3 0%, #004d73 50%, #002d42 100%);
+    box-shadow: 
+        0 20px 40px rgba(0, 119, 181, 0.6),
+        0 0 0 1px rgba(0, 119, 181, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
 }
 
 .footer-bottom {

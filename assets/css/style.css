@@ -113,6 +113,37 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# English Language Specific Styles
+--------------------------------------------------------------*/
+/* Header alignment for English */
+html[lang="en"] #header .container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+html[lang="en"] #header .container > div:nth-child(2) {
+  margin-right: 0 !important;
+  margin-left: 20px !important;
+  margin-right: auto !important;
+}
+
+/* Hero button alignment for English */
+html[lang="en"] .btn .bi {
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+}
+
+/* Skills section text alignment for English */
+html[lang="en"] .list-skill h3 {
+  text-align: left !important;
+}
+
+html[lang="en"] .list-skill {
+  text-align: left !important;
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {

@@ -39,6 +39,7 @@ class I18n {
                 'works_toca_game': 'لعبة توكا بوكا',
                 'works_solar_system': 'المجموعة الشمسية',
                 'video_text': 'فيديو',
+                'video_tooltip': 'مشاهدة الفيديو',
                 
                 // Experience Section
                 'experience_title': 'خبراتي',
@@ -53,11 +54,17 @@ class I18n {
                 // Certificates Section
                 'certificates_title': 'شهاداتي ودوراتي',
                 'cert_attaa_title': 'شهادات العطاء الرقمي',
+                'cert_attaa_ai': 'تطبيقات الذكاء الاصطناعي',
+                'cert_attaa_security': 'استراتيجيات امان الانترنت',
+                'cert_attaa_future': 'مستقبل التوظيف والمهارات اللازمة',
                 'cert_doroob_title': 'شهادات هدف',
+                'cert_doroob_presentations': 'إنشاء عروض تقديمية',
+                'cert_doroob_skills': 'المهارات الأساسية للعمل',
                 'cert_minnesota_title': 'شهادة احترافية من جامعة - MINNESOTA',
                 'cert_ibm_title': 'شهادات احترافية من IBM',
                 'cert_jindal_title': 'شهادة احترافية من جامعة - JINDAL GLOBAL',
                 'cert_volunteer_title': 'ايامن',
+                'cert_volunteer_desc': 'عمل تطوعي',
                 
                 // Digital Vision Section
                 'vision_quote1': 'الحاسب لغة المستقبل التي نكتب بها قصة وطننا الرقمي ونبني عبرها جسور التطور',
@@ -142,6 +149,7 @@ class I18n {
                 'works_toca_game': 'Toca Boca Game',
                 'works_solar_system': 'Solar System',
                 'video_text': 'Video',
+                'video_tooltip': 'Watch Video',
                 
                 // Experience Section
                 'experience_title': 'My Experience',
@@ -156,11 +164,17 @@ class I18n {
                 // Certificates Section
                 'certificates_title': 'My Certificates & Courses',
                 'cert_attaa_title': 'Digital Giving Certificates',
+                'cert_attaa_ai': 'Artificial Intelligence Applications',
+                'cert_attaa_security': 'Internet Security Strategies',
+                'cert_attaa_future': 'Future of Employment and Required Skills',
                 'cert_doroob_title': 'Hadaf Certificates',
+                'cert_doroob_presentations': 'Creating Presentations',
+                'cert_doroob_skills': 'Basic Work Skills',
                 'cert_minnesota_title': 'Professional Certificate from University of MINNESOTA',
                 'cert_ibm_title': 'Professional Certificates from IBM',
                 'cert_jindal_title': 'Professional Certificate from JINDAL GLOBAL University',
                 'cert_volunteer_title': 'Aiamen',
+                'cert_volunteer_desc': 'Volunteer Work',
                 
                 // Digital Vision Section
                 'vision_quote1': 'Computer is the language of the future with which we write the story of our digital nation and build bridges of development through it',
@@ -267,6 +281,15 @@ class I18n {
             const key = element.getAttribute('data-i18n');
             if (this.translations[this.currentLanguage][key]) {
                 element.textContent = this.translations[this.currentLanguage][key];
+            }
+        });
+        
+        // Update title attributes
+        const titleElements = document.querySelectorAll('[data-i18n-title]');
+        titleElements.forEach(element => {
+            const key = element.getAttribute('data-i18n-title');
+            if (this.translations[this.currentLanguage][key]) {
+                element.setAttribute('title', this.translations[this.currentLanguage][key]);
             }
         });
     }

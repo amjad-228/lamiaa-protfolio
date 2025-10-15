@@ -161,47 +161,106 @@ body {
   z-index: 1000;
 }
 
-/* Back button styling for sub-pages */
+/* Back button styling for sub-pages - Minimal & Professional */
 .back-button-container {
-  position: relative;
+  position: fixed;
+  top: 90px;
   z-index: 999;
+  transition: all 0.3s ease;
+}
+
+/* RTL positioning */
+html[dir="rtl"] .back-button-container {
+  right: 20px;
+}
+
+/* LTR positioning */
+html[dir="ltr"] .back-button-container {
+  left: 20px;
 }
 
 .back-button {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
-  background: linear-gradient(135deg, #7E72D1 0%, #4731AF 100%);
-  color: white;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #4731AF;
   text-decoration: none;
-  border-radius: 25px;
-  font-weight: 600;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 13px;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 10px rgba(126, 114, 209, 0.3);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(71, 49, 175, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .back-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(126, 114, 209, 0.4);
-  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 20px rgba(71, 49, 175, 0.15);
+  background: rgba(71, 49, 175, 0.05);
+  color: #4731AF;
   text-decoration: none;
+  border-color: rgba(71, 49, 175, 0.2);
 }
 
 .back-button i {
-  font-size: 16px;
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.back-button:hover i {
+  transform: translateX(-2px);
+}
+
+/* English direction adjustment */
+html[lang="en"] .back-button i {
+  transform: scaleX(-1);
+}
+
+html[lang="en"] .back-button:hover i {
+  transform: scaleX(-1) translateX(2px);
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+  .back-button-container {
+    top: 80px;
+    right: 15px;
+    left: 15px;
+  }
+  
   .back-button {
-    padding: 8px 16px;
-    font-size: 14px;
+    padding: 6px 12px;
+    font-size: 12px;
   }
   
   .back-button i {
-    font-size: 14px;
+    font-size: 12px;
   }
+}
+
+/* Fix header scroll issue - Force fixed positioning */
+.fixed-top {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+}
+
+#header {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+}
+
+#header.header-scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12) !important;
 }
 
 /*--------------------------------------------------------------

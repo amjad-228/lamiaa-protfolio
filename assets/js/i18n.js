@@ -119,8 +119,27 @@ class I18n {
                 // Page Titles
                 'graduation_page_title': 'شهادة التخرج - لمياء العمري',
                 'certificates_page_title': 'الشهادات - لمياء العمري',
-                'experience_page_title': 'الخبرات - لمياء العمري',
-                'recommendations_page_title': 'التوصيات العلمية - لمياء العمري'
+                'experience_page_title': 'التدريب التعاوني - مدينة الملك سلمان الطبية - لمياء العمري',
+                'recommendations_page_title': 'التوصيات العلمية - لمياء العمري',
+                
+                // KSMC Experience Page
+                'ksmc_title': 'التدريب التعاوني – مدينة الملك سلمان الطبية قسم التقنية',
+                'ksmc_description': 'قدّمت دعمًا لأنظمة تقنية المعلومات وحل المشكلات، وعملت على الأنظمة الصحية الإلكترونية وتدفقات بيانات المرضى بالتعاون مع فرق متعددة التخصصات. نفذت مهامًا في الشبكات والأمن السيبراني، وأدرت جرد الأجهزة والأصول التقنية في بيئة المستشفى.',
+                'training_topics_title': 'مواضيع خطة التدريب',
+                'programs_tools_title': 'البرامج والأدوات المستخدمة',
+                'zoom_image': 'تكبير الصورة',
+                
+                // Training Topics
+                'topic_1_title': 'الدعم الفني والصيانة',
+                'topic_1_desc': 'تهيئة نظام Windows وتنزيل تحديثاته، وتثبيت البرامج المضادّات للفيروسات ومع إعداد الطابعات والماسحات الضوئية، وإجراء صيانة دورية للأجهزة، والتأكد من بقاء جميع الأنظمة مُحدَّثة.',
+                'topic_2_title': 'الشبكات',
+                'topic_2_desc': 'اضافة الأجهزة إلى شبكة الوزارة، ومراقبه أداء الشبكة، وتفعيل النقاط الحديثة للإنترنت،تعلم عن غرفة السيرفر أساسيات إعداد الموجّهات والمبدّلات وتنظيم وترقيم الكوابل، وضبط المنافذ وVLANs ايضاً متابعة الطاقة.',
+                'topic_3_title': 'الأنظمة',
+                'topic_3_desc': 'إنشاء مستخدمين ومنح الصلاحيات، وتعيين كلمات المرور للأنظمة، كما ساهمت في إنشاء عيادات وأقسام جديدة داخل النظام وحل مشاكل الأنظمة عند ظهورها.',
+                'topic_4_title': 'أمن الحاسوب',
+                'topic_4_desc': 'حماية الأنظمة والبيانات عبر إصلاح مشكلات الشاشة الزرقاء، وتثبيت برامج الحماية من الفيروسات، وإعادة تعيين كلمات المرور عند الحاجة.',
+                'topic_5_title': 'جرد الأجهزة',
+                'topic_5_desc': 'إجراء جردًا تفصيليًا وتسجيلًا لجميع الأجهزة الإلكترونية في المستشفى، مع توحيد البيانات وحفظها في ملفات Excel للمتابعة.'
             },
             en: {
                 // Header & Navigation
@@ -238,8 +257,27 @@ class I18n {
                 // Page Titles
                 'graduation_page_title': 'Graduation Certificate - Lamyaa Al-Amri',
                 'certificates_page_title': 'Certificates - Lamyaa Al-Amri',
-                'experience_page_title': 'Experience - Lamyaa Al-Amri',
-                'recommendations_page_title': 'Academic Recommendations - Lamyaa Al-Amri'
+                'experience_page_title': 'Cooperative Training - King Salman Medical City - Lamyaa Al-Amri',
+                'recommendations_page_title': 'Academic Recommendations - Lamyaa Al-Amri',
+                
+                // KSMC Experience Page
+                'ksmc_title': 'Cooperative Training – King Salman Medical City IT Department',
+                'ksmc_description': 'Provided support for information technology systems and problem-solving, worked on electronic health systems and patient data flows in collaboration with multidisciplinary teams. Implemented tasks in networking and cybersecurity, and managed inventory of devices and technical assets in the hospital environment.',
+                'training_topics_title': 'Training Plan Topics',
+                'programs_tools_title': 'Programs and Tools Used',
+                'zoom_image': 'Zoom Image',
+                
+                // Training Topics
+                'topic_1_title': 'Technical Support and Maintenance',
+                'topic_1_desc': 'Windows system setup and updates, installing antivirus software and configuring printers and scanners, performing routine device maintenance, and ensuring all systems remain updated.',
+                'topic_2_title': 'Networks',
+                'topic_2_desc': 'Adding devices to the ministry network, monitoring network performance, activating modern internet points, learning about server room basics of router and switch setup, cable organization and numbering, port configuration and VLANs, and power monitoring.',
+                'topic_3_title': 'Systems',
+                'topic_3_desc': 'Creating users and granting permissions, setting passwords for systems, contributing to creating new clinics and departments within the system, and solving system problems when they arise.',
+                'topic_4_title': 'Computer Security',
+                'topic_4_desc': 'Protecting systems and data by fixing blue screen issues, installing antivirus protection software, and resetting passwords when needed.',
+                'topic_5_title': 'Device Inventory',
+                'topic_5_desc': 'Conducting detailed inventory and registration of all electronic devices in the hospital, standardizing data and saving it in Excel files for follow-up.'
             }
         };
         

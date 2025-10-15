@@ -121,17 +121,11 @@ class SharedHeader {
                     padding-top: ${this.isHomePage ? '0px' : '80px'};
                 }
                 
-                .back-button-container {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                    z-index: 999;
-                    position: relative;
-                }
-                
                 /* Ensure main content has proper spacing on sub-pages */
                 ${!this.isHomePage ? `
-                main, .certificate-detail, section:first-of-type {
-                    margin-top: 20px;
+                main, .certificate-detail, .experience-detail, section:first-of-type {
+                    margin-top: 40px;
+                    padding-top: 20px;
                 }
                 ` : ''}
                 
@@ -139,6 +133,13 @@ class SharedHeader {
                     body {
                         padding-top: ${this.isHomePage ? '0px' : '70px'};
                     }
+                    
+                    ${!this.isHomePage ? `
+                    main, .certificate-detail, .experience-detail, section:first-of-type {
+                        margin-top: 30px;
+                        padding-top: 15px;
+                    }
+                    ` : ''}
                 }
             `;
             document.head.appendChild(style);

@@ -181,11 +181,11 @@ body {
   z-index: 1000;
 }
 
-/* Back button styling for sub-pages - Minimal & Professional */
+/* Back button styling for sub-pages - Below Header */
 .back-button-container {
-  position: fixed;
-  top: 90px;
-  z-index: 999;
+  position: absolute;
+  top: 20px;
+  z-index: 100;
   transition: all 0.3s ease;
 }
 
@@ -247,8 +247,14 @@ html[lang="en"] .back-button:hover i {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .back-button-container {
-    top: 80px;
+    top: 15px;
+  }
+  
+  html[dir="rtl"] .back-button-container {
     right: 15px;
+  }
+  
+  html[dir="ltr"] .back-button-container {
     left: 15px;
   }
   

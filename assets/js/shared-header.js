@@ -124,8 +124,9 @@ class SharedHeader {
                 /* Ensure main content has proper spacing on sub-pages */
                 ${!this.isHomePage ? `
                 main, .certificate-detail, .experience-detail, section:first-of-type {
-                    margin-top: 40px;
+                    margin-top: 60px;
                     padding-top: 20px;
+                    position: relative;
                 }
                 ` : ''}
                 
@@ -136,8 +137,9 @@ class SharedHeader {
                     
                     ${!this.isHomePage ? `
                     main, .certificate-detail, .experience-detail, section:first-of-type {
-                        margin-top: 30px;
+                        margin-top: 50px;
                         padding-top: 15px;
+                        position: relative;
                     }
                     ` : ''}
                 }

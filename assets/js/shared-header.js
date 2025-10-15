@@ -152,6 +152,21 @@ class SharedHeader {
             window.i18n.updateTranslations();
         }
     }
+    
+    // Initialize AOS animations
+    initializeAnimations() {
+        // Wait for AOS to be loaded
+        if (typeof AOS !== 'undefined') {
+            AOS.refresh();
+        } else {
+            // Retry after a short delay if AOS isn't loaded yet
+            setTimeout(() => {
+                if (typeof AOS !== 'undefined') {
+                    AOS.refresh();
+                }
+            }, 500);
+        }
+    }
 }
 
 // Initialize shared header when DOM is loaded
@@ -164,4 +179,9 @@ document.addEventListener('DOMContentLoaded', function() {
             window.sharedHeader.updateTranslations();
         }, 100);
     }
+    
+    // Initialize animations after everything is loaded
+    setTimeout(() => {
+        window.sharedHeader.initializeAnimations();
+    }, 200);
 });

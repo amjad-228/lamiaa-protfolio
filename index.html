@@ -934,7 +934,27 @@
   
   <!-- i18n Translation System -->
   <script src="assets/js/i18n.js"></script>
- 
+  
+  <!-- Initialize AOS Animations -->
+  <script>
+    // Initialize AOS when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    });
+    
+    // Refresh AOS when language changes
+    document.addEventListener('languageChanged', function() {
+        setTimeout(() => {
+            AOS.refresh();
+        }, 300);
+    });
+  </script>
+
     <script>
 /* OWL -------------*/
 var owl = $('#web_latest');

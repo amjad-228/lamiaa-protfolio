@@ -318,6 +318,12 @@ class I18n {
         // Restore scroll position after a brief delay to allow CSS to load
         setTimeout(() => {
             window.scrollTo(0, scrollPosition);
+            
+            // Dispatch language change event for AOS refresh
+            const languageChangeEvent = new CustomEvent('languageChanged', {
+                detail: { language: lang }
+            });
+            document.dispatchEvent(languageChangeEvent);
         }, 100);
     }
     

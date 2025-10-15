@@ -143,14 +143,34 @@ html[lang="en"] .list-skill {
   text-align: left !important;
 }
 
-/* Smooth transitions for language switching */
+/* Smooth transitions for language switching - Don't affect AOS */
 body {
   transition: none !important;
 }
 
-* {
-  transition-property: color, background-color, border-color, box-shadow !important;
+/* Only apply transitions to specific elements, not all */
+.language-toggle,
+.back-button,
+#header,
+.btn {
+  transition-property: color, background-color, border-color, box-shadow, transform !important;
   transition-duration: 0.3s !important;
+}
+
+/* Preserve AOS animations - Don't override AOS transitions */
+[data-aos] {
+  transition-property: transform, opacity !important;
+  transition-timing-function: ease !important;
+}
+
+/* Ensure AOS works properly */
+[data-aos][data-aos][data-aos-easing="ease-in-out"] {
+  transition-timing-function: ease-in-out !important;
+}
+
+/* Fix any potential z-index conflicts with AOS */
+[data-aos] {
+  position: relative;
 }
 
 /*--------------------------------------------------------------

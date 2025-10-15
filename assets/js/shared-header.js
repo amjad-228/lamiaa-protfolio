@@ -80,32 +80,16 @@ class SharedHeader {
     
     setupBackButton() {
         if (!this.isHomePage) {
-            // Update existing back button or create one if it doesn't exist
+            // Only update existing back button, don't create new ones
             let backButton = document.querySelector('.back-button-container');
             if (backButton) {
                 const backLink = backButton.querySelector('.back-button');
-                if (backLink) {
+                if (backLink && !backLink.querySelector('[data-i18n="back_to_home"]')) {
                     // Add translation attributes to existing back button
                     backLink.innerHTML = `
                         <i class="bi bi-arrow-right"></i>
                         <span data-i18n="back_to_home">العودة للرئيسية</span>
                     `;
-                }
-            } else {
-                // Create back button if it doesn't exist
-                const backButtonHTML = `
-                    <div class="back-button-container">
-                        <a href="index.html" class="back-button">
-                            <i class="bi bi-arrow-right"></i>
-                            <span data-i18n="back_to_home">العودة للرئيسية</span>
-                        </a>
-                    </div>
-                `;
-                
-                // Insert after header
-                const header = document.getElementById('header');
-                if (header) {
-                    header.insertAdjacentHTML('afterend', backButtonHTML);
                 }
             }
         }
@@ -124,9 +108,15 @@ class SharedHeader {
                 /* Ensure main content has proper spacing on sub-pages */
                 ${!this.isHomePage ? `
                 main, .certificate-detail, .experience-detail, section:first-of-type {
-                    margin-top: 60px;
+                    margin-top: 0px;
                     padding-top: 20px;
                     position: relative;
+                }
+                
+                /* Ensure back button container is positioned correctly */
+                .back-button-container {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
                 }
                 ` : ''}
                 
@@ -137,9 +127,14 @@ class SharedHeader {
                     
                     ${!this.isHomePage ? `
                     main, .certificate-detail, .experience-detail, section:first-of-type {
-                        margin-top: 50px;
+                        margin-top: 0px;
                         padding-top: 15px;
                         position: relative;
+                    }
+                    
+                    .back-button-container {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
                     }
                     ` : ''}
                 }

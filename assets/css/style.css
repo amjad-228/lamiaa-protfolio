@@ -183,9 +183,10 @@ body {
 
 /* Back button styling for sub-pages - Below Header */
 .back-button-container {
-  position: absolute;
-  top: 20px;
-  z-index: 100;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
   transition: all 0.3s ease;
 }
 
@@ -247,15 +248,16 @@ html[lang="en"] .back-button:hover i {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .back-button-container {
-    top: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   
   html[dir="rtl"] .back-button-container {
-    right: 15px;
+    margin-right: 0;
   }
   
   html[dir="ltr"] .back-button-container {
-    left: 15px;
+    margin-left: 0;
   }
   
   .back-button {
@@ -273,7 +275,7 @@ html[lang="en"] .back-button:hover i {
   position: fixed !important;
   top: 0 !important;
   width: 100% !important;
-  z-index: 1000 !important;
+  z-index: 9999 !important;
 }
 
 #header {
@@ -282,6 +284,7 @@ html[lang="en"] .back-button:hover i {
   -webkit-backdrop-filter: blur(10px) !important;
   transition: all 0.3s ease !important;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08) !important;
+  z-index: 9999 !important;
 }
 
 #header.header-scrolled {

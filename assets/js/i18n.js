@@ -234,10 +234,13 @@ class I18n {
     }
     
     setLanguage(lang) {
+        // Save current scroll position
+        const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        
         this.currentLanguage = lang;
         localStorage.setItem('language', lang);
         
-        // Update HTML attributes
+        // Update HTML attributes smoothly
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
         
@@ -255,23 +258,40 @@ class I18n {
         
         // Update carousel RTL settings
         this.updateCarouselSettings(lang);
+        
+        // Restore scroll position after a brief delay to allow CSS to load
+        setTimeout(() => {
+            window.scrollTo(0, scrollPosition);
+        }, 100);
     }
     
     updateBootstrapCSS(lang) {
         const bootstrapLink = document.querySelector('link[href*="bootstrap"]');
         if (bootstrapLink) {
-            if (lang === 'ar') {
-                bootstrapLink.href = 'assets/vendor/bootstrap/css/bootstrap.rtl.min.css';
-            } else {
-                bootstrapLink.href = 'assets/vendor/bootstrap/css/bootstrap.min.css';
+            const currentHref = bootstrapLink.href;
+            const newHref = lang === 'ar' 
+                ? 'assets/vendor/bootstrap/css/bootstrap.rtl.min.css'
+                : 'assets/vendor/bootstrap/css/bootstrap.min.css';
+            
+            // Only update if the href is different to avoid unnecessary reloads
+            if (!currentHref.includes(newHref.split('/').pop())) {
+                // Create a new link element to avoid page jump
+                const newLink = document.createElement('link');
+                newLink.rel = 'stylesheet';
+                newLink.href = newHref;
+                
+                // Insert the new link before the old one
+                bootstrapLink.parentNode.insertBefore(newLink, bootstrapLink);
+                
+                // Remove the old link after the new one loads
+                newLink.onload = () => {
+                    setTimeout(() => {
+                        if (bootstrapLink.parentNode) {
+                            bootstrapLink.parentNode.removeChild(bootstrapLink);
+                        }
+                    }, 50);
+                };
             }
-            // Force reload of the CSS
-            bootstrapLink.onload = () => {
-                // Trigger a reflow to apply new styles
-                document.body.style.display = 'none';
-                document.body.offsetHeight; // Trigger reflow
-                document.body.style.display = '';
-            };
         }
     }
     
@@ -344,19 +364,28 @@ class I18n {
     }
     
     updateCarouselSettings(lang) {
-        // Update Owl Carousel RTL settings
+        // Update Owl Carousel RTL settings without causing jumps
         setTimeout(() => {
             if (window.$ && $('.owl-carousel').length) {
                 $('.owl-carousel').each(function() {
                     const owl = $(this).data('owl.carousel');
-                    if (owl) {
+                    if (owl && owl.settings.rtl !== (lang === 'ar')) {
+                        // Store current slide
+                        const currentSlide = owl.current();
+                        
+                        // Update RTL setting
                         owl.settings.rtl = (lang === 'ar');
+                        
+                        // Refresh without animation to prevent jumps
                         owl.invalidate('all');
                         owl.refresh();
+                        
+                        // Go back to the same slide
+                        owl.to(currentSlide, 0); // 0 = no animation
                     }
                 });
             }
-        }, 100);
+        }, 150);
     }
     
     translate(key) {

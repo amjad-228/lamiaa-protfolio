@@ -143,6 +143,16 @@ html[lang="en"] .list-skill {
   text-align: left !important;
 }
 
+/* Smooth transitions for language switching */
+body {
+  transition: none !important;
+}
+
+* {
+  transition-property: color, background-color, border-color, box-shadow !important;
+  transition-duration: 0.3s !important;
+}
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/

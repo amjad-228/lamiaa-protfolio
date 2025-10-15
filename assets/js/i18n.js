@@ -139,7 +139,24 @@ class I18n {
                 'topic_4_title': 'أمن الحاسوب',
                 'topic_4_desc': 'حماية الأنظمة والبيانات عبر إصلاح مشكلات الشاشة الزرقاء، وتثبيت برامج الحماية من الفيروسات، وإعادة تعيين كلمات المرور عند الحاجة.',
                 'topic_5_title': 'جرد الأجهزة',
-                'topic_5_desc': 'إجراء جردًا تفصيليًا وتسجيلًا لجميع الأجهزة الإلكترونية في المستشفى، مع توحيد البيانات وحفظها في ملفات Excel للمتابعة.'
+                'topic_5_desc': 'إجراء جردًا تفصيليًا وتسجيلًا لجميع الأجهزة الإلكترونية في المستشفى، مع توحيد البيانات وحفظها في ملفات Excel للمتابعة.',
+                
+                // E-DEVER Experience Page
+                'edever_title': 'التدريب الشخصي – شركة E-Dever لهندسة البرمجيات',
+                'edever_description': 'كان هدفي من التدريب فهم المقرر الجامعي هندسة البرمجيات بشكل عملي، وخلاله تمكنت من اكتساب خبرة في تطوير البرامج والمواقع منذ المراحل الأولى وحتى الإطلاق بأسلوب هندسي متكامل، مما ساعدني على الحصول على درجة ممتاز وتوصية علمية من الدكتورة.',
+                'training_certificate': 'شهادة التدريب',
+                
+                // E-DEVER Training Topics
+                'edever_topic_1_title': 'تصميم واجهة المستخدم',
+                'edever_topic_1_desc': 'تعلم تناسق الألوان والأشكال بما يناسب طبيعة الموقع أو التطبيق والفئة المستهدفة. كما استخدمت Figma لتطبيق هذه المفاهيم في تصاميم عملية.',
+                'edever_topic_2_title': 'برمجة التطبيقات والمواقع',
+                'edever_topic_2_desc': 'برمجة Front-End، Back-End باستخدام لغات JavaScript وC++ وHTML. كما استخدمت منصة Visual Studio لتطوير وتنفيذ المشاريع البرمجية بشكل متكامل.',
+                'edever_topic_3_title': 'قواعد البيانات و API',
+                'edever_topic_3_desc': 'العمل على قواعد البيانات باستخدام SQL، وربطها مع التطبيقات بشكل متكامل. كما استخدمت واجهات برمجية (APIs) لتنفيذ خدمات مثل أنظمة الدفع الإلكتروني.',
+                'edever_topic_4_title': 'اختبار البرنامج والتحقق من الجودة',
+                'edever_topic_4_desc': 'التحقق من وظائف النظام واكتشاف الأخطاء، وتطبيق مبادئ ضمان الجودة لضمان عمل البرامج بكفاءة عالية قبل الإطلاق.',
+                'edever_topic_5_title': 'إدارة مهام الفريق والتعاون',
+                'edever_topic_5_desc': 'إدارة مهام الفريق وتابعت إنجازها عبر أداة Planner، مع التأكد من دقة التنفيذ والالتزام بالوقت. كما ساعدني ذلك على تعزيز روح العمل الجماعي.'
             },
             en: {
                 // Header & Navigation
@@ -277,7 +294,24 @@ class I18n {
                 'topic_4_title': 'Computer Security',
                 'topic_4_desc': 'Protecting systems and data by fixing blue screen issues, installing antivirus protection software, and resetting passwords when needed.',
                 'topic_5_title': 'Device Inventory',
-                'topic_5_desc': 'Conducting detailed inventory and registration of all electronic devices in the hospital, standardizing data and saving it in Excel files for follow-up.'
+                'topic_5_desc': 'Conducting detailed inventory and registration of all electronic devices in the hospital, standardizing data and saving it in Excel files for follow-up.',
+                
+                // E-DEVER Experience Page
+                'edever_title': 'Personal Training – E-Dever Software Engineering Company',
+                'edever_description': 'My goal from the training was to understand the university software engineering course practically. Through it, I was able to gain experience in developing programs and websites from the initial stages to launch with an integrated engineering approach, which helped me get an excellent grade and academic recommendation from the professor.',
+                'training_certificate': 'Training Certificate',
+                
+                // E-DEVER Training Topics
+                'edever_topic_1_title': 'User Interface Design',
+                'edever_topic_1_desc': 'Learning color and shape harmony suitable for the nature of the website or application and the target audience. I also used Figma to apply these concepts in practical designs.',
+                'edever_topic_2_title': 'Applications and Websites Programming',
+                'edever_topic_2_desc': 'Front-End and Back-End programming using JavaScript, C++, and HTML languages. I also used Visual Studio platform to develop and implement programming projects comprehensively.',
+                'edever_topic_3_title': 'Databases and API',
+                'edever_topic_3_desc': 'Working on databases using SQL and integrating them with applications comprehensively. I also used APIs to implement services such as electronic payment systems.',
+                'edever_topic_4_title': 'Software Testing and Quality Verification',
+                'edever_topic_4_desc': 'Verifying system functions and discovering errors, applying quality assurance principles to ensure programs work with high efficiency before launch.',
+                'edever_topic_5_title': 'Team Task Management and Collaboration',
+                'edever_topic_5_desc': 'Managing team tasks and following up on their completion through Planner tool, ensuring execution accuracy and time commitment. This also helped me enhance teamwork spirit.'
             }
         };
         

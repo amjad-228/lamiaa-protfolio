@@ -154,6 +154,57 @@ body {
 }
 
 /*--------------------------------------------------------------
+# Shared Header System Styles
+--------------------------------------------------------------*/
+/* Ensure header appears above all content */
+#header {
+  z-index: 1000;
+}
+
+/* Back button styling for sub-pages */
+.back-button-container {
+  position: relative;
+  z-index: 999;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #7E72D1 0%, #4731AF 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(126, 114, 209, 0.3);
+}
+
+.back-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(126, 114, 209, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.back-button i {
+  font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .back-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+  
+  .back-button i {
+    font-size: 14px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
 #preloader {

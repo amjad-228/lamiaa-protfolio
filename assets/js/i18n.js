@@ -111,7 +111,16 @@ class I18n {
                 
                 // Mobile Navigation
                 'mobile_nav_title': 'القائمة',
-                'mobile_nav_subtitle': 'اختر القسم المطلوب'
+                'mobile_nav_subtitle': 'اختر القسم المطلوب',
+                
+                // Back Button
+                'back_to_home': 'العودة للرئيسية',
+                
+                // Page Titles
+                'graduation_page_title': 'شهادة التخرج - لمياء العمري',
+                'certificates_page_title': 'الشهادات - لمياء العمري',
+                'experience_page_title': 'الخبرات - لمياء العمري',
+                'recommendations_page_title': 'التوصيات العلمية - لمياء العمري'
             },
             en: {
                 // Header & Navigation
@@ -221,7 +230,16 @@ class I18n {
                 
                 // Mobile Navigation
                 'mobile_nav_title': 'Menu',
-                'mobile_nav_subtitle': 'Choose the desired section'
+                'mobile_nav_subtitle': 'Choose the desired section',
+                
+                // Back Button
+                'back_to_home': 'Back to Home',
+                
+                // Page Titles
+                'graduation_page_title': 'Graduation Certificate - Lamyaa Al-Amri',
+                'certificates_page_title': 'Certificates - Lamyaa Al-Amri',
+                'experience_page_title': 'Experience - Lamyaa Al-Amri',
+                'recommendations_page_title': 'Academic Recommendations - Lamyaa Al-Amri'
             }
         };
         

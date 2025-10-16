@@ -197,10 +197,16 @@ class SharedHeader {
             </div>
         `;
         
-        // Insert after header
-        const header = document.querySelector('#header');
-        if (header) {
-            header.insertAdjacentHTML('afterend', backButtonHTML);
+        // Insert at the beginning of main content
+        const main = document.querySelector('main, section:first-of-type, .certificate-detail, .experience-detail, .recommendations-detail');
+        if (main) {
+            main.insertAdjacentHTML('afterbegin', backButtonHTML);
+        } else {
+            // Fallback: insert after header if no main content found
+            const header = document.querySelector('#header');
+            if (header) {
+                header.insertAdjacentHTML('afterend', backButtonHTML);
+            }
         }
     }
     
@@ -227,13 +233,17 @@ class SharedHeader {
                 
                 /* Ensure main content has proper spacing on sub-pages */
                 ${!this.isHomePage ? `
-                main, .certificate-detail, .experience-detail, section:first-of-type {
+                main, .certificate-detail, .experience-detail, section:first-of-type, .recommendations-detail {
                     margin-top: 0px;
-                    padding-top: 20px;
+                    padding-top: 0px;
                     position: relative;
                 }
                 
-                /* Back button styles removed */
+                /* Ensure back button is inside content area */
+                .back-button-container {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
                 ` : ''}
                 
                 @media (max-width: 768px) {
@@ -242,13 +252,17 @@ class SharedHeader {
                     }
                     
                     ${!this.isHomePage ? `
-                    main, .certificate-detail, .experience-detail, section:first-of-type {
+                    main, .certificate-detail, .experience-detail, section:first-of-type, .recommendations-detail {
                         margin-top: 0px;
-                        padding-top: 15px;
+                        padding-top: 0px;
                         position: relative;
                     }
                     
-                    /* Back button mobile styles removed */
+                    /* Back button mobile spacing */
+                    .back-button-container {
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
                     ` : ''}
                 }
             `;

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>شهادة تطوع - لمياء العمري</title>
+    <title data-i18n="aiamen_page_title">شهادة تطوع - لمياء العمري</title>
     <meta content="شهادة تطوع - لمياء العمري" name="description">
     <meta content="شهادة، تطوع، لمياء العمري، علوم الحاسب" name="keywords">
 
@@ -16,7 +16,7 @@
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -28,15 +28,7 @@
 
   <body>
 
-    <!-- ======= Back Button ======= -->
-    <div class="back-button-container">
-        <a href="index.html" class="back-button">
-            <i class="bi bi-arrow-right"></i>
-            العودة للرئيسية
-        </a>
-    </div>
-
-    <!-- ======= Certificate Section ======= -->
+        <!-- ======= Certificate Section ======= -->
     <section id="certificate-detail" class="certificate-detail">
         <div class="container">
             <div class="row justify-content-center">
@@ -49,24 +41,24 @@
                                     <img src="assets/img/certificates/volunteer.png" alt="DOROOB" class="logo-image">
                                 </div>
                                 <div class="certificate-title">
-                                    <h1> شهادة تقدير للعمل التطوعي في مشروع "أيامن"</h1>
+                                    <h1 data-i18n="aiamen_title">شهادة تطوع - أيامن</h1>
                                 </div>
                             </div>
 
                             <div class="certificate-content">
                                 <div class="description-section">
-                                   <p>هذه الشهادةتقديرًا لمشاركتي الفعّالة في العمل التطوعي الذي تم تنفيذه ضمن برنامج "أيامن". خلال مشاركتي في هذا البرنامج، أسهمت في مشروع تطوعي يتعلق بتنظيم وتشغيل المصلى في المدرسة، حيث عملت على توفير بيئة مريحة ومرتبة للطلاب لأداء عباداتهم بشكل منظم.
+                                   <p data-i18n="aiamen_desc">هذه الشهادةتقديرًا لمشاركتي الفعّالة في العمل التطوعي الذي تم تنفيذه ضمن برنامج "أيامن". خلال مشاركتي في هذا البرنامج، أسهمت في مشروع تطوعي يتعلق بتنظيم وتشغيل المصلى في المدرسة، حيث عملت على توفير بيئة مريحة ومرتبة للطلاب لأداء عباداتهم بشكل منظم.
                                     لقد كان هدفي من هذا العمل هو أن أساهم في تحسين البيئة المدرسية، وأن أكون جزءًا من تعزيز روح التعاون والمشاركة بين الطلاب. عملت بكل إخلاص واهتمام لضمان أن يكون المصلى مكانًا مناسبًا للجميع، مما يعكس التزامي العميق بخدمة المجتمع المدرسي.
                                     مشاركتي في هذا المشروع كانت تجربة تعليمية قيمة، حيث تعلمت من خلالها أهمية العمل الجماعي وأثر العطاء في تحسين البيئة المحيطة. وأنا فخورة بأنني استطعت الإسهام في توفير بيئة مناسبة للطلاب لأداء عباداتهم بشكل مريح، مما يعكس قدرتي على العطاء والعمل في إطار الفريق.</p>
                                 </div>
 
                                 <div class="certificate-image-section">
-                                    <h3>صورة الشهادة</h3>
+                                    <h3 data-i18n="certificate_image">صورة الشهادة</h3>
                                     <div class="certificate-image-container">
                                         <img src="assets/img/certificates/aiamen.png"  class="certificate-image">
                                         <div class="image-overlay">
                                             <a href="assets/img/certificates/aiamen.png" class="btn btn-primary" data-glightbox="certificate">
-                                                <i class="bi bi-zoom-in"></i> تكبير الصورة
+                                                <i class="bi bi-zoom-in"></i> <span data-i18n="zoom_image">تكبير الصورة</span>
                                             </a>
                                         </div>
                                     </div>
@@ -79,16 +71,7 @@
         </div>
     </section>
 
-    <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>لمياء العمري</span></strong>. جميع الحقوق محفوظة
-            </div>
-        </div>
-    </footer>
-
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -103,5 +86,31 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    
+    <!-- Shared Header System -->
+    <script src="assets/js/shared-header.js"></script>
+    
+    <!-- i18n Translation System -->
+    <script src="assets/js/i18n.js"></script>
+    
+    <!-- Initialize AOS Animations -->
+    <script>
+        // Initialize AOS when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 1000,
+                easing: 'ease-in-out',
+                once: true,
+                mirror: false
+            });
+        });
+        
+        // Refresh AOS when language changes
+        document.addEventListener('languageChanged', function() {
+            setTimeout(() => {
+                AOS.refresh();
+            }, 300);
+        });
+    </script>
 </body>
 </html>

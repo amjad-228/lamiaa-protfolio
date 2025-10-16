@@ -50,6 +50,9 @@ class SharedHeader {
         
         // Insert header at the beginning of body
         document.body.insertAdjacentHTML('afterbegin', headerHTML);
+        
+        // Create footer for all pages
+        this.createFooter();
     }
     
     getUnifiedNavigation() {
@@ -87,6 +90,94 @@ class SharedHeader {
                 <li><a href="${this.isHomePage ? '#contact' : 'index.html#contact'}" class="mobile-nav-link" data-i18n="nav_contact">تواصل معي</a></li>
             </ul>
         `;
+    }
+    
+    createFooter() {
+        // Create unified footer for all pages
+        const footerHTML = `
+            <!-- ======= Footer ======= -->
+            <footer id="footer">
+                <div class="footer-main">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Right Column - Branding -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-brand">
+                                    <h3 data-i18n="footer_resume">سيرة ذاتية</h3>
+                                    <h4 data-i18n="footer_cs">تخصص علوم الحاسب</h4>
+                                    <div class="footer-logo">
+                                        <img src="assets/img/logo.png" alt="شعار لمياء العمري" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Middle Column - Navigation -->
+                            <div class="col-lg-4 col-md-6">
+                                <div class="footer-nav">
+                                    <h3 data-i18n="footer_content">محتوى سيرتي الذاتية</h3>
+                                    <ul>
+                                        <li><a href="${this.isHomePage ? '#about' : 'index.html#about'}" data-i18n="footer_about">تعريف عني</a></li>
+                                        <li><a href="${this.isHomePage ? '#latest_works' : 'index.html#latest_works'}" data-i18n="footer_works">اعمالي</a></li>
+                                        <li><a href="${this.isHomePage ? '#experience' : 'index.html#experience'}" data-i18n="footer_experience">خبراتي</a></li>
+                                        <li><a href="${this.isHomePage ? '#digital-vision' : 'index.html#digital-vision'}" data-i18n="footer_message">رسالتي</a></li>
+                                        <li><a href="${this.isHomePage ? '#education' : 'index.html#education'}" data-i18n="footer_recommendations">التوصيات العلمية</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <!-- Left Column - Contact -->
+                            <div class="col-lg-4 col-md-12">
+                                <div class="footer-contact">
+                                    <h3 data-i18n="footer_contact">تواصل معي</h3>
+                                    <p>xlamyaa@outlook.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Media Icons -->
+                        <div class="footer-social">
+                            <a href="mailto:xlamyaa@outlook.com" class="social-icon" target="_blank">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/lamyaa-alamri-5b563b236?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-icon" target="_blank">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="https://wa.me/966507872908" class="social-icon" target="_blank">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="https://x.com/lam2yaa?s=21" class="social-icon" target="_blank">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="https://github.com/lamyaa2030" class="social-icon" target="_blank">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Bottom Strip -->
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="copyright">
+                            &copy; Copyright <strong><span>لمياء العمري</span></strong>. <span data-i18n="footer_copyright">جميع الحقوق محفوظة</span>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- End Footer -->
+        `;
+        
+        // Insert footer before the back-to-top button or at the end of body
+        const backToTop = document.querySelector('.back-to-top');
+        const existingFooter = document.querySelector('#footer');
+        
+        // Only create footer if it doesn't already exist
+        if (!existingFooter) {
+            if (backToTop) {
+                backToTop.insertAdjacentHTML('beforebegin', footerHTML);
+            } else {
+                document.body.insertAdjacentHTML('beforeend', footerHTML);
+            }
+        }
     }
     
     // setupBackButton method removed - no longer needed

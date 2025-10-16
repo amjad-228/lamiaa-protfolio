@@ -195,9 +195,24 @@ class I18n {
                 'jindal_desc': 'استفدت من الدورة المبادئ والتقنيات المستخدمة في الذكاء الاصطناعي، بما في ذلك تعلم الآلة، معالجة اللغة الطبيعية، والروبوتات. وهو مصمم لتزويد المتعلمين بفهم شامل لتطبيقات الذكاء الاصطناعي وأساليبه.',
                 
                 // Graduation
+                'graduation_page_title': 'شهادة التخرج - لمياء العمري',
                 'graduation_title': 'وثيقة التخرج',
                 'graduation_university': 'جامعة طيبة – المملكة العربية السعودية',
                 'graduation_degree_info': 'بكالوريوس علوم الحاسب سبتمبر 2019 – ديسمبر 2024 المعدل: 4.24 / 5',
+                'graduation_desc': 'بكالوريوس علوم الحاسب من جامعة طيبة في المدينة المنورة. اخترت تخصصي رغبة وشغف كبير بمجال الحاسب والتكنولوجيا، واسعي دائم لتطوير مهاراتي في هذا المجال. خلال فترة دراستي، عملت بجد لتحقيق أعلى المستويات الأكاديمية، حيث تمكنت من تحقيق معدل تراكمي قدره 4.24 من 5.00، وهو ما يعكس التزامي الكبير والتفاني في التعلم. بالإضافة إلى دراستي الأكاديمية، شاركت في العديد من الأنشطة الجامعية والبرامج التدريبية كنت عضو في نادي قوقل للطلبة المطورين التي ساعدتني على تطوير مهاراتي العملية، واكتساب خبرات قيمة في مجال البرمجة وتحليل البيانات. كانت جامعة طيبة بالنسبة لي بيئة تعليمية محفزة، توفر العديد من الفرص لتوسيع آفاقي الأكاديمية والعملية. تلقيت الدعم والمشورة من أساتذتها الكفاءات الذين ساعدوني على التميز في مسيرتي الأكاديمية ويشيرون لي بتوصيات علمية. أنا الآن على استعداد للمساهمة في سوق العمل وتطبيق ما تعلمته في مجالات تطوير البرمجيات، وتحليل البيانات، والذكاء الاصطناعي، مع طموح كبير للاستمرار في تطوير مهاراتي المهنية.',
+                
+                // General Recommendations
+                'recommendations_page_title': 'التوصيات العامة - لمياء العمري',
+                'recommendations_main_title': 'التوصيات العامة',
+                'recommendations_subtitle': 'مجموعة من التوصيات العلمية والعملية في مجال علوم الحاسب',
+                'rec_1_title': 'توصية رئيس قسم الحاسب جامعة طيبة مقرر تدريب تعاوني',
+                'rec_2_title': 'توصية رئيسة عمادة التقنية جامعة طيبة مقرر حوسبة متوازية',
+                'rec_3_title': 'وصية محاضر في قسم الذكاء الاصطناعي وعلم البيانات مقرر هندسة البرمجيات',
+                'rec_4_title': 'توصية مشرفة مشروع التخرج',
+                'rec_5_title': 'توصية البروفيسور قسم علوم وهندسة الحاسب مقرر تصميم المنطق الرقمي',
+                'rec_6_title': 'توصية محاضر في قسم علوم وهندسة الحاسب مقرر نظرية الحوسبة',
+                'rec_7_title': 'توصية محاضر في قسم علوم وهندسة الحاسب مقرر الرسم بالحاسب',
+                'rec_8_title': 'توصية محاضر في قسم الرياضيات مقرر الاحتمال والاحصاء للمهندسين',
                 
                 // Aiamen (Volunteer)
                 'aiamen_page_title': 'شهادة تطوع - لمياء العمري',
@@ -401,9 +416,24 @@ class I18n {
                 'jindal_desc': 'I benefited from the course on principles and techniques used in artificial intelligence, including machine learning, natural language processing, and robotics. It is designed to provide learners with a comprehensive understanding of AI applications and methodologies.',
                 
                 // Graduation
+                'graduation_page_title': 'Graduation Certificate - Lamyaa Al-Amri',
                 'graduation_title': 'Graduation Document',
                 'graduation_university': 'Taibah University – Kingdom of Saudi Arabia',
                 'graduation_degree_info': 'Bachelor of Computer Science September 2019 – December 2024 GPA: 4.24 / 5',
+                'graduation_desc': 'Bachelor of Computer Science from Taibah University in Medina. I chose my major out of great desire and passion for the field of computer science and technology, and I always strive to develop my skills in this field. During my studies, I worked hard to achieve the highest academic levels, where I was able to achieve a cumulative GPA of 4.24 out of 5.00, which reflects my great commitment and dedication to learning. In addition to my academic studies, I participated in many university activities and training programs. I was a member of the Google Developer Student Club which helped me develop my practical skills and gain valuable experience in programming and data analysis. Taibah University was for me a stimulating educational environment that provides many opportunities to expand my academic and practical horizons. I received support and advice from its competent professors who helped me excel in my academic career and provide me with academic recommendations. I am now ready to contribute to the job market and apply what I have learned in the fields of software development, data analysis, and artificial intelligence, with great ambition to continue developing my professional skills.',
+                
+                // General Recommendations
+                'recommendations_page_title': 'General Recommendations - Lamyaa Al-Amri',
+                'recommendations_main_title': 'General Recommendations',
+                'recommendations_subtitle': 'A collection of academic and practical recommendations in the field of computer science',
+                'rec_1_title': 'Recommendation from Head of Computer Department, Taibah University - Cooperative Training Course',
+                'rec_2_title': 'Recommendation from Dean of Technology, Taibah University - Parallel Computing Course',
+                'rec_3_title': 'Recommendation from Lecturer in AI and Data Science Department - Software Engineering Course',
+                'rec_4_title': 'Recommendation from Graduation Project Supervisor',
+                'rec_5_title': 'Recommendation from Professor in Computer Science and Engineering Department - Digital Logic Design Course',
+                'rec_6_title': 'Recommendation from Lecturer in Computer Science and Engineering Department - Theory of Computation Course',
+                'rec_7_title': 'Recommendation from Lecturer in Computer Science and Engineering Department - Computer Graphics Course',
+                'rec_8_title': 'Recommendation from Lecturer in Mathematics Department - Probability and Statistics for Engineers Course',
                 
                 // Aiamen (Volunteer)
                 'aiamen_page_title': 'Volunteer Certificate - Lamyaa Al-Amri',

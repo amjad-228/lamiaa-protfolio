@@ -12,6 +12,11 @@
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+  <!-- Preload Critical Fonts -->
+  <link rel="preload" href="assets/fonts/Montserrat-Arabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Montserrat-Arabic-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Montserrat-Arabic-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
@@ -846,13 +851,24 @@
   
   <!-- Initialize AOS Animations -->
   <script>
-    // Initialize AOS when page loads
+    // Initialize AOS immediately for better performance
     document.addEventListener('DOMContentLoaded', function() {
+        // Show critical content immediately
+        const criticalElements = document.querySelectorAll('#hero h2, #hero p, .section-title h2');
+        criticalElements.forEach(el => {
+            el.style.opacity = '1';
+            el.style.transform = 'none';
+        });
+        
+        // Initialize AOS with optimized settings
         AOS.init({
-            duration: 1000,
-            easing: 'ease-in-out',
+            duration: 600,
+            easing: 'ease-out',
             once: true,
-            mirror: false
+            mirror: false,
+            offset: 50,
+            delay: 0,
+            startEvent: 'DOMContentLoaded'
         });
     });
     
@@ -860,7 +876,7 @@
     document.addEventListener('languageChanged', function() {
         setTimeout(() => {
             AOS.refresh();
-        }, 300);
+        }, 100);
     });
   </script>
 

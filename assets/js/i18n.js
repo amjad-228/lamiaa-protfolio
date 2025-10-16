@@ -452,6 +452,11 @@ class I18n {
         this.setLanguage(this.currentLanguage);
         this.setupLanguageToggle();
         this.setupCrossTabSync();
+        
+        // Additional check to ensure language toggle is updated after DOM is fully ready
+        setTimeout(() => {
+            this.updateLanguageToggle();
+        }, 200);
     }
     
     setupCrossTabSync() {
@@ -605,12 +610,16 @@ class I18n {
             const flag = toggleBtn.querySelector('.flag');
             const text = toggleBtn.querySelector('.lang-text');
             
-            if (this.currentLanguage === 'ar') {
-                flag.textContent = '🇺🇸';
-                text.textContent = 'EN';
-            } else {
-                flag.textContent = '🇸🇦';
-                text.textContent = 'ع';
+            if (flag && text) {
+                if (this.currentLanguage === 'ar') {
+                    // Currently Arabic, show button to switch to English
+                    flag.textContent = '🇺🇸';
+                    text.textContent = 'EN';
+                } else {
+                    // Currently English, show button to switch to Arabic
+                    flag.textContent = '🇸🇦';
+                    text.textContent = 'ع';
+                }
             }
         }
     }
@@ -623,20 +632,28 @@ class I18n {
         
         const toggleBtn = document.getElementById('languageToggle');
         if (toggleBtn) {
+            // Add click event listener
             toggleBtn.addEventListener('click', () => {
                 const newLang = this.currentLanguage === 'ar' ? 'en' : 'ar';
                 this.setLanguage(newLang);
             });
+            
+            // Ensure the button displays the correct state immediately
+            this.updateLanguageToggle();
         }
     }
     
     createLanguageToggle() {
         const header = document.querySelector('#header .container');
         if (header) {
+            // Determine correct initial values based on current language
+            const flag = this.currentLanguage === 'ar' ? '🇺🇸' : '🇸🇦';
+            const text = this.currentLanguage === 'ar' ? 'EN' : 'ع';
+            
             const toggleHTML = `
                 <button id="languageToggle" class="language-toggle">
-                    <span class="flag">🇺🇸</span>
-                    <span class="lang-text">EN</span>
+                    <span class="flag">${flag}</span>
+                    <span class="lang-text">${text}</span>
                 </button>
             `;
             

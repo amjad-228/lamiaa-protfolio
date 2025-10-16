@@ -212,10 +212,14 @@ class SharedHeader {
 document.addEventListener('DOMContentLoaded', function() {
     window.sharedHeader = new SharedHeader();
     
-    // If i18n is already loaded, update translations
+    // If i18n is already loaded, update translations and language toggle
     if (window.i18n) {
         setTimeout(() => {
             window.sharedHeader.updateTranslations();
+            // Ensure language toggle shows correct state
+            if (window.i18n.updateLanguageToggle) {
+                window.i18n.updateLanguageToggle();
+            }
         }, 100);
     }
     

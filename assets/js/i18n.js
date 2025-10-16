@@ -91,7 +91,7 @@ class I18n {
                 'skill_english': 'اللغة الإنجليزية',
                 
                 // Partners Section
-                'partners_title': 'شركاء نجاحي',
+                'partners_title': 'شركاء تطويري',
                 
                 // Contact Section
                 'contact_title': 'تواصل معي',
@@ -311,7 +311,7 @@ class I18n {
                 'skill_english': 'English Language',
                 
                 // Partners Section
-                'partners_title': 'Success Partners',
+                'partners_title': 'Development Partners',
                 
                 // Contact Section
                 'contact_title': 'Contact Me',

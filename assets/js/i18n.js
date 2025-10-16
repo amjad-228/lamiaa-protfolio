@@ -179,7 +179,9 @@ class I18n {
                 
                 // IBM Certificates  
                 'ibm_hardware_title': 'مقدمة في الأجهزة وأنظمة التشغيل',
+                'ibm_hardware_desc': 'تغطي هذه الدورة أساسيات الأجهزة الحاسوبية وأنظمة التشغيل، ويستعرض العلاقة بين مكونات الأجهزة والبرمجيات، ويوفر فهمًا لكيفية إدارة أنظمة التشغيل لموارد الأجهزة. هو مساق غير معتمد عبر الإنترنت مقدم من شركة آي بي إم.',
                 'ibm_ml_title': 'تعلم الآلة باستخدام بايثون',
+                'ibm_ml_desc': 'تقدم هذه الدورة مفاهيم تعلم الآلة ويعرض كيفية تطبيق الخوارزميات باستخدام لغة بايثون. تشمل المواضيع المعالجة المبدئية للبيانات، تدريب النماذج، وتقنيات التقييم، بهدف توفير أساس قوي في تعلم الآلة باستخدام بايثون.',
                 'ibm_org': 'شركة آي بي إم',
                 
                 // University Certificates
@@ -380,7 +382,9 @@ class I18n {
                 
                 // IBM Certificates  
                 'ibm_hardware_title': 'Introduction to Hardware and Operating Systems',
+                'ibm_hardware_desc': 'This course covers the fundamentals of computer hardware and operating systems, exploring the relationship between hardware components and software, and providing an understanding of how operating systems manage hardware resources. It is an online non-credit course offered by IBM Corporation.',
                 'ibm_ml_title': 'Machine Learning with Python',
+                'ibm_ml_desc': 'This course introduces machine learning concepts and demonstrates how to apply algorithms using Python. Topics include data preprocessing, model training, and evaluation techniques, aiming to provide a strong foundation in machine learning using Python.',
                 'ibm_org': 'IBM Corporation',
                 
                 // University Certificates

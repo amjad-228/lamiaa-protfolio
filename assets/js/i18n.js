@@ -172,7 +172,10 @@ class I18n {
                 
                 // Doroob Certificates
                 'doroob_powerpoint_title': 'دورة PowerPoint دروب',
-                'doroob_skills_title': 'المهارات الأساسية للعمل دروب',
+                'doroob_powerpoint_desc': 'تقدم هذه الدورة تدريبًا على استخدام PowerPoint لإنشاء عروض تقديمية فعالة ومهنية. يستعرض المتعلمون الأدوات والتقنيات اللازمة لتصميم شرائح جذابة بصريًا، مما يعزز مهاراتهم في تقديم العروض.',
+                'doroob_skills_title': 'المهارات الأساسية للعمل',
+                'doroob_skills_org': 'درووب',
+                'doroob_skills_desc': 'تعلمت لتعزيز المهارات الأساسية للعمل، مع التركيز على تحسين التواصل، إدارة الوقت، والعمل الجماعي. يهدف إلى تجهيز الأفراد لسوق العمل الحديث من خلال تعزيز المهارات المهنية الأساسية.',
                 
                 // IBM Certificates  
                 'ibm_hardware_title': 'مقدمة في الأجهزة وأنظمة التشغيل',
@@ -367,7 +370,10 @@ class I18n {
                 
                 // Doroob Certificates
                 'doroob_powerpoint_title': 'PowerPoint Course - Doroob',
-                'doroob_skills_title': 'Basic Work Skills - Doroob',
+                'doroob_powerpoint_desc': 'This course provides training on using PowerPoint to create effective and professional presentations. Learners explore the tools and techniques needed to design visually appealing slides, enhancing their presentation skills.',
+                'doroob_skills_title': 'Basic Work Skills',
+                'doroob_skills_org': 'Doroob',
+                'doroob_skills_desc': 'I learned to enhance basic work skills, focusing on improving communication, time management, and teamwork. It aims to prepare individuals for the modern job market by strengthening essential professional skills.',
                 
                 // IBM Certificates  
                 'ibm_hardware_title': 'Introduction to Hardware and Operating Systems',

@@ -200,8 +200,10 @@ class I18n {
                 'graduation_degree_info': 'بكالوريوس علوم الحاسب سبتمبر 2019 – ديسمبر 2024 المعدل: 4.24 / 5',
                 
                 // Aiamen (Volunteer)
+                'aiamen_page_title': 'شهادة تطوع - لمياء العمري',
                 'aiamen_title': 'شهادة تطوع - أيامن',
                 'aiamen_org': 'منظمة أيامن التطوعية',
+                'aiamen_desc': 'هذه الشهادةتقديرًا لمشاركتي الفعّالة في العمل التطوعي الذي تم تنفيذه ضمن برنامج "أيامن". خلال مشاركتي في هذا البرنامج، أسهمت في مشروع تطوعي يتعلق بتنظيم وتشغيل المصلى في المدرسة، حيث عملت على توفير بيئة مريحة ومرتبة للطلاب لأداء عباداتهم بشكل منظم. لقد كان هدفي من هذا العمل هو أن أساهم في تحسين البيئة المدرسية، وأن أكون جزءًا من تعزيز روح التعاون والمشاركة بين الطلاب. عملت بكل إخلاص واهتمام لضمان أن يكون المصلى مكانًا مناسبًا للجميع، مما يعكس التزامي العميق بخدمة المجتمع المدرسي. مشاركتي في هذا المشروع كانت تجربة تعليمية قيمة، حيث تعلمت من خلالها أهمية العمل الجماعي وأثر العطاء في تحسين البيئة المحيطة. وأنا فخورة بأنني استطعت الإسهام في توفير بيئة مناسبة للطلاب لأداء عباداتهم بشكل مريح، مما يعكس قدرتي على العطاء والعمل في إطار الفريق.',
                 
                 // General terms
                 'certificate_description': 'وصف الشهادة',
@@ -404,8 +406,10 @@ class I18n {
                 'graduation_degree_info': 'Bachelor of Computer Science September 2019 – December 2024 GPA: 4.24 / 5',
                 
                 // Aiamen (Volunteer)
+                'aiamen_page_title': 'Volunteer Certificate - Lamyaa Al-Amri',
                 'aiamen_title': 'Volunteer Certificate - Aiamen',
                 'aiamen_org': 'Aiamen Volunteer Organization',
+                'aiamen_desc': 'This certificate is in recognition of my active participation in volunteer work carried out within the "Aiamen" program. During my participation in this program, I contributed to a volunteer project related to organizing and operating the prayer room at school, where I worked to provide a comfortable and organized environment for students to perform their prayers in an orderly manner. My goal from this work was to contribute to improving the school environment and to be part of promoting the spirit of cooperation and participation among students. I worked with all sincerity and care to ensure that the prayer room was a suitable place for everyone, reflecting my deep commitment to serving the school community. My participation in this project was a valuable learning experience, through which I learned the importance of teamwork and the impact of giving in improving the surrounding environment. I am proud that I was able to contribute to providing a suitable environment for students to perform their prayers comfortably, which reflects my ability to give and work within a team framework.',
                 
                 // General terms
                 'certificate_description': 'Certificate Description',

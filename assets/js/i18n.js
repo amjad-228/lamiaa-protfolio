@@ -183,8 +183,11 @@ class I18n {
                 'ibm_org': 'شركة آي بي إم',
                 
                 // University Certificates
+                'minnesota_cert_title': 'جامعة مينيسوتا – شهادة إتمام',
+                'minnesota_course_title': 'المقرر: ممارسات هندسية لبناء برمجيات عالية الجودة',
                 'minnesota_title': 'ممارسات الهندسة لبناء برمجيات عالية الجودة',
                 'minnesota_org': 'جامعة مينيسوتا',
+                'minnesota_desc': 'الأساليب العملية والمعايير الصناعية لتطوير أنظمة برمجية عالية الجودة. يشمل استراتيجيات الاختبار، مراجعة الأكواد، إدارة الإصدارات، وممارسات التكامل المستمر. يركز البرنامج على بناء برمجيات موثوقة، قابلة للصيانة، وقابلة للتوسع. وقد تم تقديمه عبر منصة كورسيرا وباعتماد من جامعة مينيسوتا.',
                 'jindal_title': 'الذكاء الاصطناعي',
                 'jindal_org': 'جامعة جيندال العالمية',
                 
@@ -381,8 +384,11 @@ class I18n {
                 'ibm_org': 'IBM Corporation',
                 
                 // University Certificates
+                'minnesota_cert_title': 'University of Minnesota – Certificate of Completion',
+                'minnesota_course_title': 'Course: Engineering Practices for Building Quality Software',
                 'minnesota_title': 'Engineering Practices for Building Quality Software',
                 'minnesota_org': 'University of Minnesota',
+                'minnesota_desc': 'Practical methods and industry standards for developing high-quality software systems. Includes testing strategies, code reviews, version management, and continuous integration practices. The program focuses on building reliable, maintainable, and scalable software. It was delivered through Coursera platform and accredited by the University of Minnesota.',
                 'jindal_title': 'Artificial Intelligence',
                 'jindal_org': 'Jindal Global University',
                 

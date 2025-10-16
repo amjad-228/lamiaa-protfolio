@@ -163,6 +163,63 @@ body {
   transition-timing-function: ease !important;
 }
 
+/* Fix recommendations page layout for English */
+html[lang="en"] .recommendation-item {
+  flex-direction: row !important;
+  text-align: left !important;
+  direction: ltr !important;
+  align-items: flex-start !important;
+}
+
+html[lang="en"] .recommendation-number {
+  position: absolute !important;
+  top: -10px !important;
+  left: 20px !important;
+  right: auto !important;
+}
+
+html[lang="en"] .recommendation-content {
+  flex: 1 !important;
+  text-align: left !important;
+  margin-left: 60px !important;
+  margin-right: 0 !important;
+}
+
+html[lang="en"] .recommendation-content h4 {
+  text-align: left !important;
+}
+
+/* Ensure proper spacing and alignment for English mode */
+html[lang="en"] .recommendations-grid {
+  direction: ltr !important;
+}
+
+/* Mobile responsive fixes for English recommendations */
+@media (max-width: 768px) {
+  html[lang="en"] .recommendation-content {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: center !important;
+  }
+  
+  html[lang="en"] .recommendation-number {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    margin: 0 auto 15px auto !important;
+  }
+  
+  html[lang="en"] .recommendation-item {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  
+  html[lang="en"] .recommendation-content h4 {
+    text-align: center !important;
+  }
+}
+
 /* Ensure AOS works properly */
 [data-aos][data-aos][data-aos-easing="ease-in-out"] {
   transition-timing-function: ease-in-out !important;

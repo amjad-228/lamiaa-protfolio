@@ -53,6 +53,11 @@ class SharedHeader {
         
         // Create footer for all pages
         this.createFooter();
+        
+        // Create back button for sub-pages only
+        if (!this.isHomePage) {
+            this.createBackButton();
+        }
     }
     
     getUnifiedNavigation() {
@@ -180,7 +185,35 @@ class SharedHeader {
         }
     }
     
-    // setupBackButton method removed - no longer needed
+    createBackButton() {
+        // Create back button for sub-pages only
+        const backButtonHTML = `
+            <!-- ======= Back Button ======= -->
+            <div class="back-button-container">
+                <button class="back-button" onclick="window.sharedHeader.goBack()">
+                    <i class="bi bi-arrow-right"></i>
+                    <span data-i18n="back_to_home">العودة للرئيسية</span>
+                </button>
+            </div>
+        `;
+        
+        // Insert after header
+        const header = document.querySelector('#header');
+        if (header) {
+            header.insertAdjacentHTML('afterend', backButtonHTML);
+        }
+    }
+    
+    goBack() {
+        // Smart back navigation: go to previous page or homepage
+        if (document.referrer && document.referrer.includes(window.location.origin)) {
+            // If came from within the same site, go back
+            window.history.back();
+        } else {
+            // Otherwise, go to homepage
+            window.location.href = 'index.html';
+        }
+    }
     
     adjustPageLayout() {
         // Add proper spacing for fixed header

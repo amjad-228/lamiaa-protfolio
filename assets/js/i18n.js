@@ -127,6 +127,7 @@ class I18n {
                 'training_topics_title': 'مواضيع خطة التدريب',
                 'programs_tools_title': 'البرامج والأدوات المستخدمة',
                 'zoom_image': 'تكبير الصورة',
+                'back_to_home': 'العودة للرئيسية',
                 
                 // Training Topics
                 'topic_1_title': 'الدعم الفني والصيانة',
@@ -347,6 +348,7 @@ class I18n {
                 'training_topics_title': 'Training Plan Topics',
                 'programs_tools_title': 'Programs and Tools Used',
                 'zoom_image': 'Zoom Image',
+                'back_to_home': 'Back to Home',
                 
                 // Training Topics
                 'topic_1_title': 'Technical Support and Maintenance',

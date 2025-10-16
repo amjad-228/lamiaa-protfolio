@@ -156,7 +156,47 @@ class I18n {
                 'edever_topic_4_title': 'اختبار البرنامج والتحقق من الجودة',
                 'edever_topic_4_desc': 'التحقق من وظائف النظام واكتشاف الأخطاء، وتطبيق مبادئ ضمان الجودة لضمان عمل البرامج بكفاءة عالية قبل الإطلاق.',
                 'edever_topic_5_title': 'إدارة مهام الفريق والتعاون',
-                'edever_topic_5_desc': 'إدارة مهام الفريق وتابعت إنجازها عبر أداة Planner، مع التأكد من دقة التنفيذ والالتزام بالوقت. كما ساعدني ذلك على تعزيز روح العمل الجماعي.'
+                'edever_topic_5_desc': 'إدارة مهام الفريق وتابعت إنجازها عبر أداة Planner، مع التأكد من دقة التنفيذ والالتزام بالوقت. كما ساعدني ذلك على تعزيز روح العمل الجماعي.',
+                
+                // Attaa Digital Certificates Page
+                'attaa_cert_1_title': 'تطبيقات الذكاء الاصطناعي',
+                'attaa_cert_1_org': 'العطاء الرقمي',
+                'attaa_cert_1_desc': 'تركز هذه الدوره على التطبيقات العملية للذكاء الاصطناعي في مجالات مختلفة مثل الأعمال، الرعاية الصحية، والتكنولوجيا. كما يسلط الضوء على فهم تأثير الذكاء الاصطناعي على الصناعات الحديثة.',
+                'attaa_cert_2_title': 'استراتيجيات أمان الإنترنت',
+                'attaa_cert_2_org': 'العطاء الرقمي',
+                'attaa_cert_2_desc': 'تناولت هذه المحاضرة استراتيجيات تأمين المعلومات على الإنترنت، مع التركيز على مبادئ الأمن السيبراني مثل التشفير، اكتشاف التهديدات، وتدابير الاستجابة، مما يساعد الأفراد والشركات على تأمين بيئاتهم الرقمية.',
+                'attaa_cert_3_title': 'مستقبل التوظيف والمهارات اللازمة',
+                'attaa_cert_3_org': 'العطاء الرقمي',
+                'attaa_cert_3_desc': 'تم التركيز على أهمية مواكبة التقنيات الحديثة مثل الذكاء الاصطناعي والبرمجة. العطاء في هذا المجال يتطلب تطوير المهارات التقنية والشخصية مثل التفكير النقدي والعمل الجماعي لضمان النجاح في سوق العمل المستقبلي.',
+                'certificate_image': 'صورة الشهادة',
+                
+                // Doroob Certificates
+                'doroob_powerpoint_title': 'دورة PowerPoint دروب',
+                'doroob_skills_title': 'المهارات الأساسية للعمل دروب',
+                
+                // IBM Certificates  
+                'ibm_hardware_title': 'مقدمة في الأجهزة وأنظمة التشغيل',
+                'ibm_ml_title': 'تعلم الآلة باستخدام بايثون',
+                'ibm_org': 'شركة آي بي إم',
+                
+                // University Certificates
+                'minnesota_title': 'ممارسات الهندسة لبناء برمجيات عالية الجودة',
+                'minnesota_org': 'جامعة مينيسوتا',
+                'jindal_title': 'الذكاء الاصطناعي',
+                'jindal_org': 'جامعة جيندال العالمية',
+                
+                // Graduation
+                'graduation_title': 'وثيقة التخرج',
+                'graduation_university': 'جامعة طيبة – المملكة العربية السعودية',
+                'graduation_degree_info': 'بكالوريوس علوم الحاسب سبتمبر 2019 – ديسمبر 2024 المعدل: 4.24 / 5',
+                
+                // Aiamen (Volunteer)
+                'aiamen_title': 'شهادة تطوع - أيامن',
+                'aiamen_org': 'منظمة أيامن التطوعية',
+                
+                // General terms
+                'certificate_description': 'وصف الشهادة',
+                'certificate_details': 'تفاصيل الشهادة'
             },
             en: {
                 // Header & Navigation
@@ -311,7 +351,47 @@ class I18n {
                 'edever_topic_4_title': 'Software Testing and Quality Verification',
                 'edever_topic_4_desc': 'Verifying system functions and discovering errors, applying quality assurance principles to ensure programs work with high efficiency before launch.',
                 'edever_topic_5_title': 'Team Task Management and Collaboration',
-                'edever_topic_5_desc': 'Managing team tasks and following up on their completion through Planner tool, ensuring execution accuracy and time commitment. This also helped me enhance teamwork spirit.'
+                'edever_topic_5_desc': 'Managing team tasks and following up on their completion through Planner tool, ensuring execution accuracy and time commitment. This also helped me enhance teamwork spirit.',
+                
+                // Attaa Digital Certificates Page
+                'attaa_cert_1_title': 'Artificial Intelligence Applications',
+                'attaa_cert_1_org': 'Digital Giving',
+                'attaa_cert_1_desc': 'This course focuses on practical applications of artificial intelligence in various fields such as business, healthcare, and technology. It also highlights understanding the impact of artificial intelligence on modern industries.',
+                'attaa_cert_2_title': 'Internet Security Strategies',
+                'attaa_cert_2_org': 'Digital Giving',
+                'attaa_cert_2_desc': 'This lecture covered information security strategies on the Internet, focusing on cybersecurity principles such as encryption, threat detection, and response measures, helping individuals and companies secure their digital environments.',
+                'attaa_cert_3_title': 'Future of Employment and Required Skills',
+                'attaa_cert_3_org': 'Digital Giving',
+                'attaa_cert_3_desc': 'The focus was on the importance of keeping up with modern technologies such as artificial intelligence and programming. Giving in this field requires developing technical and personal skills such as critical thinking and teamwork to ensure success in the future job market.',
+                'certificate_image': 'Certificate Image',
+                
+                // Doroob Certificates
+                'doroob_powerpoint_title': 'PowerPoint Course - Doroob',
+                'doroob_skills_title': 'Basic Work Skills - Doroob',
+                
+                // IBM Certificates  
+                'ibm_hardware_title': 'Introduction to Hardware and Operating Systems',
+                'ibm_ml_title': 'Machine Learning with Python',
+                'ibm_org': 'IBM Corporation',
+                
+                // University Certificates
+                'minnesota_title': 'Engineering Practices for Building Quality Software',
+                'minnesota_org': 'University of Minnesota',
+                'jindal_title': 'Artificial Intelligence',
+                'jindal_org': 'Jindal Global University',
+                
+                // Graduation
+                'graduation_title': 'Graduation Document',
+                'graduation_university': 'Taibah University – Kingdom of Saudi Arabia',
+                'graduation_degree_info': 'Bachelor of Computer Science September 2019 – December 2024 GPA: 4.24 / 5',
+                
+                // Aiamen (Volunteer)
+                'aiamen_title': 'Volunteer Certificate - Aiamen',
+                'aiamen_org': 'Aiamen Volunteer Organization',
+                
+                // General terms
+                'certificate_description': 'Certificate Description',
+                'certificate_details': 'Certificate Details'
             }
         };
         

@@ -451,6 +451,33 @@ class I18n {
     init() {
         this.setLanguage(this.currentLanguage);
         this.setupLanguageToggle();
+        this.setupCrossTabSync();
+    }
+    
+    setupCrossTabSync() {
+        // Listen for language changes from other tabs/windows
+        window.addEventListener('storage', (e) => {
+            if (e.key === 'language' && e.newValue !== this.currentLanguage) {
+                // Update language without triggering another storage event
+                this.currentLanguage = e.newValue;
+                document.documentElement.lang = e.newValue;
+                document.documentElement.dir = e.newValue === 'ar' ? 'rtl' : 'ltr';
+                this.updatePageTitle(e.newValue);
+                this.updateBootstrapCSS(e.newValue);
+                this.updateTranslations();
+                this.updateLanguageToggle();
+                this.updateCarouselSettings(e.newValue);
+                
+                // Dispatch event for other components
+                const languageChangeEvent = new CustomEvent('languageChanged', {
+                    detail: { 
+                        language: e.newValue,
+                        source: 'cross-tab'
+                    }
+                });
+                document.dispatchEvent(languageChangeEvent);
+            }
+        });
     }
     
     setLanguage(lang) {
@@ -464,8 +491,8 @@ class I18n {
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
         
-        // Update page title
-        document.title = this.translations[lang]['site_title'];
+        // Update page title based on current page
+        this.updatePageTitle(lang);
         
         // Update Bootstrap CSS for RTL/LTR
         this.updateBootstrapCSS(lang);
@@ -483,12 +510,44 @@ class I18n {
         setTimeout(() => {
             window.scrollTo(0, scrollPosition);
             
-            // Dispatch language change event for AOS refresh
+            // Dispatch language change event for AOS refresh and cross-tab sync
             const languageChangeEvent = new CustomEvent('languageChanged', {
-                detail: { language: lang }
+                detail: { 
+                    language: lang,
+                    timestamp: Date.now()
+                }
             });
             document.dispatchEvent(languageChangeEvent);
+            
+            // Also trigger a storage event for cross-tab synchronization
+            window.dispatchEvent(new StorageEvent('storage', {
+                key: 'language',
+                newValue: lang,
+                url: window.location.href
+            }));
         }, 100);
+    }
+    
+    updatePageTitle(lang) {
+        // Determine the appropriate title key based on current page
+        const path = window.location.pathname;
+        let titleKey = 'site_title'; // default
+        
+        if (path.includes('graduation.html')) {
+            titleKey = 'graduation_page_title';
+        } else if (path.includes('general-recommendations.html')) {
+            titleKey = 'recommendations_page_title';
+        } else if (path.includes('aiamen.html')) {
+            titleKey = 'aiamen_page_title';
+        } else if (path.includes('certificate') || path.includes('experience')) {
+            titleKey = 'certificates_page_title';
+        }
+        
+        if (this.translations[lang][titleKey]) {
+            document.title = this.translations[lang][titleKey];
+        } else {
+            document.title = this.translations[lang]['site_title'];
+        }
     }
     
     updateBootstrapCSS(lang) {

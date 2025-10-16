@@ -27,7 +27,7 @@ class SharedHeader {
                         <p style="margin-bottom: 0;" data-i18n="my_resume">سيرتي الذاتية</p>
                     </div>
                     
-                    ${this.isHomePage ? this.getHomeNavigation() : this.getSubPageNavigation()}
+                            ${this.getUnifiedNavigation()}
                     
                 </div>
             </header><!-- End Header -->
@@ -52,38 +52,18 @@ class SharedHeader {
         document.body.insertAdjacentHTML('afterbegin', headerHTML);
     }
     
-    getHomeNavigation() {
+    getUnifiedNavigation() {
+        // Use the same navigation for all pages - always link to homepage sections
         return `
             <nav id="navbar" class="navbar justify-content-center">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero" data-i18n="nav_home">الرئيسية</a></li>
-                    <li><a class="nav-link scrollto" href="#who_us" data-i18n="nav_about">نبذة عني</a></li>
-                    <li><a class="nav-link scrollto" href="#latest_works" data-i18n="nav_works">أعمالي</a></li>
-                    <li><a class="nav-link scrollto" href="#skills" data-i18n="nav_education">تعليمي</a></li>
-                    <li><a class="nav-link scrollto" href="#experience" data-i18n="nav_experience">خبراتي</a></li>
-                    <li><a class="nav-link scrollto" href="#certificates" data-i18n="nav_certificates">شهاداتي</a></li>
-                    <li><a class="nav-link scrollto" href="#contact" data-i18n="nav_contact">تواصل معي</a></li>
-                </ul>
-                <div class="modern-hamburger mobile-nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav><!-- .navbar -->
-        `;
-    }
-    
-    getSubPageNavigation() {
-        return `
-            <nav id="navbar" class="navbar justify-content-center">
-                <ul>
-                    <li><a class="nav-link" href="index.html" data-i18n="nav_home">الرئيسية</a></li>
-                    <li><a class="nav-link" href="index.html#who_us" data-i18n="nav_about">نبذة عني</a></li>
-                    <li><a class="nav-link" href="index.html#latest_works" data-i18n="nav_works">أعمالي</a></li>
-                    <li><a class="nav-link" href="index.html#skills" data-i18n="nav_education">تعليمي</a></li>
-                    <li><a class="nav-link" href="index.html#experience" data-i18n="nav_experience">خبراتي</a></li>
-                    <li><a class="nav-link" href="index.html#certificates" data-i18n="nav_certificates">شهاداتي</a></li>
-                    <li><a class="nav-link" href="index.html#contact" data-i18n="nav_contact">تواصل معي</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto active' : ''}" href="${this.isHomePage ? '#hero' : 'index.html'}" data-i18n="nav_home">الرئيسية</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto' : ''}" href="${this.isHomePage ? '#who_us' : 'index.html#who_us'}" data-i18n="nav_about">نبذة عني</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto' : ''}" href="${this.isHomePage ? '#latest_works' : 'index.html#latest_works'}" data-i18n="nav_works">أعمالي</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto' : ''}" href="${this.isHomePage ? '#skills' : 'index.html#skills'}" data-i18n="nav_education">تعليمي</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto' : ''}" href="${this.isHomePage ? '#experience' : 'index.html#experience'}" data-i18n="nav_experience">خبراتي</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto' : ''}" href="${this.isHomePage ? '#certificates' : 'index.html#certificates'}" data-i18n="nav_certificates">شهاداتي</a></li>
+                    <li><a class="nav-link ${this.isHomePage ? 'scrollto' : ''}" href="${this.isHomePage ? '#contact' : 'index.html#contact'}" data-i18n="nav_contact">تواصل معي</a></li>
                 </ul>
                 <div class="modern-hamburger mobile-nav-toggle">
                     <span></span>
@@ -95,31 +75,18 @@ class SharedHeader {
     }
     
     getMobileNavMenu() {
-        if (this.isHomePage) {
-            return `
-                <ul class="mobile-nav-menu">
-                    <li><a href="#hero" class="mobile-nav-link" data-i18n="nav_home">الرئيسية</a></li>
-                    <li><a href="#who_us" class="mobile-nav-link" data-i18n="nav_about">نبذة عني</a></li>
-                    <li><a href="#latest_works" class="mobile-nav-link" data-i18n="nav_works">أعمالي</a></li>
-                    <li><a href="#skills" class="mobile-nav-link" data-i18n="nav_education">تعليمي</a></li>
-                    <li><a href="#experience" class="mobile-nav-link" data-i18n="nav_experience">خبراتي</a></li>
-                    <li><a href="#certificates" class="mobile-nav-link" data-i18n="nav_certificates">شهاداتي</a></li>
-                    <li><a href="#contact" class="mobile-nav-link" data-i18n="nav_contact">تواصل معي</a></li>
-                </ul>
-            `;
-        } else {
-            return `
-                <ul class="mobile-nav-menu">
-                    <li><a href="index.html" class="mobile-nav-link" data-i18n="nav_home">الرئيسية</a></li>
-                    <li><a href="index.html#who_us" class="mobile-nav-link" data-i18n="nav_about">نبذة عني</a></li>
-                    <li><a href="index.html#latest_works" class="mobile-nav-link" data-i18n="nav_works">أعمالي</a></li>
-                    <li><a href="index.html#skills" class="mobile-nav-link" data-i18n="nav_education">تعليمي</a></li>
-                    <li><a href="index.html#experience" class="mobile-nav-link" data-i18n="nav_experience">خبراتي</a></li>
-                    <li><a href="index.html#certificates" class="mobile-nav-link" data-i18n="nav_certificates">شهاداتي</a></li>
-                    <li><a href="index.html#contact" class="mobile-nav-link" data-i18n="nav_contact">تواصل معي</a></li>
-                </ul>
-            `;
-        }
+        // Unified mobile navigation for all pages
+        return `
+            <ul class="mobile-nav-menu">
+                <li><a href="${this.isHomePage ? '#hero' : 'index.html'}" class="mobile-nav-link" data-i18n="nav_home">الرئيسية</a></li>
+                <li><a href="${this.isHomePage ? '#who_us' : 'index.html#who_us'}" class="mobile-nav-link" data-i18n="nav_about">نبذة عني</a></li>
+                <li><a href="${this.isHomePage ? '#latest_works' : 'index.html#latest_works'}" class="mobile-nav-link" data-i18n="nav_works">أعمالي</a></li>
+                <li><a href="${this.isHomePage ? '#skills' : 'index.html#skills'}" class="mobile-nav-link" data-i18n="nav_education">تعليمي</a></li>
+                <li><a href="${this.isHomePage ? '#experience' : 'index.html#experience'}" class="mobile-nav-link" data-i18n="nav_experience">خبراتي</a></li>
+                <li><a href="${this.isHomePage ? '#certificates' : 'index.html#certificates'}" class="mobile-nav-link" data-i18n="nav_certificates">شهاداتي</a></li>
+                <li><a href="${this.isHomePage ? '#contact' : 'index.html#contact'}" class="mobile-nav-link" data-i18n="nav_contact">تواصل معي</a></li>
+            </ul>
+        `;
     }
     
     // setupBackButton method removed - no longer needed
@@ -251,6 +218,16 @@ document.addEventListener('DOMContentLoaded', function() {
             window.sharedHeader.updateTranslations();
         }, 100);
     }
+    
+    // Listen for language changes to update header if needed
+    document.addEventListener('languageChanged', function(e) {
+        // Update any dynamic content in header if needed
+        if (window.i18n) {
+            setTimeout(() => {
+                window.sharedHeader.updateTranslations();
+            }, 50);
+        }
+    });
     
     // Initialize animations after everything is loaded
     setTimeout(() => {

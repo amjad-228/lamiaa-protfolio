@@ -7,7 +7,7 @@ class SharedHeader {
     
     init() {
         this.createHeader();
-        this.setupBackButton();
+        // Back button functionality removed
         this.adjustPageLayout();
         this.setupMobileNavigation();
     }
@@ -122,22 +122,7 @@ class SharedHeader {
         }
     }
     
-    setupBackButton() {
-        if (!this.isHomePage) {
-            // Only update existing back button, don't create new ones
-            let backButton = document.querySelector('.back-button-container');
-            if (backButton) {
-                const backLink = backButton.querySelector('.back-button');
-                if (backLink && !backLink.querySelector('[data-i18n="back_to_home"]')) {
-                    // Add translation attributes to existing back button
-                    backLink.innerHTML = `
-                        <i class="bi bi-arrow-right"></i>
-                        <span data-i18n="back_to_home">العودة للرئيسية</span>
-                    `;
-                }
-            }
-        }
-    }
+    // setupBackButton method removed - no longer needed
     
     adjustPageLayout() {
         // Add proper spacing for fixed header
@@ -157,11 +142,7 @@ class SharedHeader {
                     position: relative;
                 }
                 
-                /* Ensure back button container is positioned correctly */
-                .back-button-container {
-                    margin-top: 20px;
-                    margin-bottom: 20px;
-                }
+                /* Back button styles removed */
                 ` : ''}
                 
                 @media (max-width: 768px) {
@@ -176,10 +157,7 @@ class SharedHeader {
                         position: relative;
                     }
                     
-                    .back-button-container {
-                        margin-top: 15px;
-                        margin-bottom: 15px;
-                    }
+                    /* Back button mobile styles removed */
                     ` : ''}
                 }
             `;

@@ -150,7 +150,6 @@ body {
 
 /* Only apply transitions to specific elements, not all */
 .language-toggle,
-.back-button,
 #header,
 .btn {
   transition-property: color, background-color, border-color, box-shadow, transform !important;
@@ -239,92 +238,25 @@ html[lang="en"] .recommendations-grid {
 }
 
 /* Back button styling for sub-pages - Below Header */
-.back-button-container {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  z-index: 1;
-  transition: all 0.3s ease;
-}
 
 /* RTL positioning */
-html[dir="rtl"] .back-button-container {
-  right: 20px;
-}
+html[dir="rtl"] 
 
 /* LTR positioning */
-html[dir="ltr"] .back-button-container {
-  left: 20px;
-}
-
-.back-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 16px;
-  background: rgba(255, 255, 255, 0.95);
-  color: #4731AF;
-  text-decoration: none;
-  border-radius: 50px;
-  font-weight: 500;
-  font-size: 13px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(71, 49, 175, 0.1);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-}
-
-.back-button:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 4px 20px rgba(71, 49, 175, 0.15);
-  background: rgba(71, 49, 175, 0.05);
-  color: #4731AF;
-  text-decoration: none;
-  border-color: rgba(71, 49, 175, 0.2);
-}
-
-.back-button i {
-  font-size: 14px;
-  transition: transform 0.3s ease;
-}
-
-.back-button:hover i {
-  transform: translateX(-2px);
-}
+html[dir="ltr"] 
 
 /* English direction adjustment */
-html[lang="en"] .back-button i {
-  transform: scaleX(-1);
-}
+html[lang="en"] 
 
-html[lang="en"] .back-button:hover i {
-  transform: scaleX(-1) translateX(2px);
-}
+html[lang="en"] 
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .back-button-container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
+
+  html[dir="rtl"] 
   
-  html[dir="rtl"] .back-button-container {
-    margin-right: 0;
-  }
-  
-  html[dir="ltr"] .back-button-container {
-    margin-left: 0;
-  }
-  
-  .back-button {
-    padding: 6px 12px;
-    font-size: 12px;
-  }
-  
-  .back-button i {
-    font-size: 12px;
-  }
+  html[dir="ltr"] 
+
 }
 
 /* Fix header scroll issue - Force fixed positioning */
@@ -1060,7 +992,6 @@ section {
   padding-bottom: 40px;
 }
 
-
 .dividers-header {
 	position: relative;
     margin: 20px 0;
@@ -1097,10 +1028,6 @@ h2.section-title span {
     border-bottom: 1px solid #007d56;
 	color:#007d56
 }
-
-
-
-
 
 .section-title h2 {
     margin: 0 0 40px 0;
@@ -1484,9 +1411,6 @@ h2.section-title span {
   transform: scale(1.1);
 }
 
-
-
-
 /*--------------------------------------------------------------
 # F.A.Q
 --------------------------------------------------------------*/
@@ -1716,7 +1640,6 @@ h2.section-title span {
 
 ************************************************************/
 
-
 .owl-custom-control {
     display: inline-block;
 }
@@ -1837,7 +1760,6 @@ h2.section-title span {
         right: -25px;
     }
 }
-
 
 /*--------------------------------------------------------------
 # Experience Section - Professional Design
@@ -3052,12 +2974,6 @@ h2.section-title span {
 /*--------------------------------------------------------------
 # Back Button
 --------------------------------------------------------------*/
-.back-button-container {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
 
 /*--------------------------------------------------------------
 # Footer
@@ -4119,7 +4035,6 @@ h2.section-title span {
     text-align: right;
 }
 
-
 .recommendation-content h4 {
     color: #0b2871;
 }
@@ -4288,34 +4203,6 @@ h2.section-title span {
         font-size: 11px;
         padding: 6px 12px;
     }
-}
-
-.back-button {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: linear-gradient(135deg, #8B5CF6 0%, #A855F7 100%);
-    color: #fff;
-    padding: 12px 20px;
-    border-radius: 25px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-    transition: all 0.3s ease;
-    border: none;
-}
-
-.back-button:hover {
-    background: linear-gradient(135deg, #7C3AED 0%, #9333EA 100%);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.4);
-    color: #fff;
-    text-decoration: none;
-}
-
-.back-button i {
-    font-size: 16px;
 }
 
 /*--------------------------------------------------------------
@@ -4521,30 +4408,11 @@ h2.section-title span {
     border-top: 1px solid #e9ecef;
 }
 
-.back-button .btn {
-    padding: 12px 30px;
-    font-weight: 600;
-    border-radius: 25px;
-    transition: all 0.3s ease;
-}
-
-.back-button .btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(139, 92, 246, 0.3);
-}
+/* Back button styles removed */
 
 /* Responsive Design for Certificate Detail */
 @media (max-width: 768px) {
-    .back-button-container {
-        top: 15px;
-        right: 15px;
-    }
-    
-    .back-button {
-        padding: 10px 16px;
-        font-size: 13px;
-    }
-    
+
     .certificate-detail {
         padding: 30px 0 60px;
     }
@@ -4866,7 +4734,6 @@ h2.section-title span {
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-
 
 /*--------------------------------------------------------------
 # Services
@@ -5494,8 +5361,6 @@ a.btn.btn-ask:hover {
     line-height: 1.8;
 }
 
-
-
 .flip-container {
 	perspective: 1000px;
 	transform-style: preserve-3d;
@@ -5505,7 +5370,6 @@ a.btn.btn-ask:hover {
 .flip-container:hover .back {transform: rotateY(0deg);}
 
 .flipper {transition: 1s;transform-style: preserve-3d;position: relative;height: 300px;}
-
 
 .flip-container, .front, .back {
     width: 100%;
@@ -5536,8 +5400,7 @@ a.btn.btn-ask:hover {
     padding: 30px 25px;
 	transform: rotateY(-180deg);
 }
- 
- 
+
  .flipper .front {
 	height: 100%;
 	position: absolute;

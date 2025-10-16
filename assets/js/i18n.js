@@ -114,7 +114,6 @@ class I18n {
                 'mobile_nav_subtitle': 'اختر القسم المطلوب',
                 
                 // Back Button
-                'back_to_home': 'العودة للرئيسية',
                 
                 // Page Titles
                 'graduation_page_title': 'شهادة التخرج - لمياء العمري',
@@ -335,7 +334,6 @@ class I18n {
                 'mobile_nav_subtitle': 'Choose the desired section',
                 
                 // Back Button
-                'back_to_home': 'Back to Home',
                 
                 // Page Titles
                 'graduation_page_title': 'Graduation Certificate - Lamyaa Al-Amri',

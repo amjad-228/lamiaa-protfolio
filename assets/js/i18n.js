@@ -191,7 +191,8 @@ class I18n {
                 'minnesota_org': 'جامعة مينيسوتا',
                 'minnesota_desc': 'الأساليب العملية والمعايير الصناعية لتطوير أنظمة برمجية عالية الجودة. يشمل استراتيجيات الاختبار، مراجعة الأكواد، إدارة الإصدارات، وممارسات التكامل المستمر. يركز البرنامج على بناء برمجيات موثوقة، قابلة للصيانة، وقابلة للتوسع. وقد تم تقديمه عبر منصة كورسيرا وباعتماد من جامعة مينيسوتا.',
                 'jindal_title': 'الذكاء الاصطناعي',
-                'jindal_org': 'جامعة جيندال العالمية',
+                'jindal_org': 'جامعة O.P. جيندال العالمية',
+                'jindal_desc': 'استفدت من الدورة المبادئ والتقنيات المستخدمة في الذكاء الاصطناعي، بما في ذلك تعلم الآلة، معالجة اللغة الطبيعية، والروبوتات. وهو مصمم لتزويد المتعلمين بفهم شامل لتطبيقات الذكاء الاصطناعي وأساليبه.',
                 
                 // Graduation
                 'graduation_title': 'وثيقة التخرج',
@@ -394,7 +395,8 @@ class I18n {
                 'minnesota_org': 'University of Minnesota',
                 'minnesota_desc': 'Practical methods and industry standards for developing high-quality software systems. Includes testing strategies, code reviews, version management, and continuous integration practices. The program focuses on building reliable, maintainable, and scalable software. It was delivered through Coursera platform and accredited by the University of Minnesota.',
                 'jindal_title': 'Artificial Intelligence',
-                'jindal_org': 'Jindal Global University',
+                'jindal_org': 'O.P. Jindal Global University',
+                'jindal_desc': 'I benefited from the course on principles and techniques used in artificial intelligence, including machine learning, natural language processing, and robotics. It is designed to provide learners with a comprehensive understanding of AI applications and methodologies.',
                 
                 // Graduation
                 'graduation_title': 'Graduation Document',

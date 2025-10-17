@@ -19,6 +19,7 @@ class I18n {
                 'hero_name': 'لمياء العمري',
                 'hero_title': 'علوم حاسب',
                 'hero_contact_btn': 'تواصل',
+                'hero_download_resume_btn': 'تحميل السيرة الذاتية',
                 
                 // About Section
                 'about_title': 'تعريف عني',
@@ -240,6 +241,7 @@ class I18n {
                 'hero_name': 'Lamyaa Al-Amri',
                 'hero_title': 'Computer Science',
                 'hero_contact_btn': 'Contact',
+                'hero_download_resume_btn': 'Download Resume',
                 
                 // About Section
                 'about_title': 'About Me',

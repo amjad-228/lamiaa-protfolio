@@ -1,7 +1,7 @@
 // نظام الترجمة للموقع - i18n System
 class I18n {
     constructor() {
-        this.currentLanguage = localStorage.getItem('language') || 'ar';
+        this.currentLanguage = localStorage.getItem('language') || 'en';
         this.translations = {
             ar: {
                 // Header & Navigation

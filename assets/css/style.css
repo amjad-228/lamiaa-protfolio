@@ -67,6 +67,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Hero Section Buttons
+--------------------------------------------------------------*/
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hero-buttons .btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  min-width: 160px;
+  justify-content: center;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-buttons .btn-primary {
+  background: linear-gradient(135deg, #7E72D1 0%, #4731AF 100%);
+  border: 2px solid transparent;
+  color: white;
+}
+
+.hero-buttons .btn-primary:hover {
+  background: linear-gradient(135deg, #8A7ED8 0%, #5940B8 100%);
+  box-shadow: 0 8px 25px rgba(126, 114, 209, 0.4);
+}
+
+.hero-buttons .btn-outline-primary {
+  background: transparent;
+  border: 2px solid #7E72D1;
+  color: #7E72D1;
+}
+
+.hero-buttons .btn-outline-primary:hover {
+  background: linear-gradient(135deg, #7E72D1 0%, #4731AF 100%);
+  color: white;
+  border-color: #7E72D1;
+}
+
+@media (max-width: 768px) {
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+/*--------------------------------------------------------------
 # Language Toggle Button
 --------------------------------------------------------------*/
 .language-toggle {

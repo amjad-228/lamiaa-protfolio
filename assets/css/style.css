@@ -67,6 +67,40 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------------------------------
+# Hero Section Resume Download Button
+--------------------------------------------------------------*/
+.btn-outline-primary {
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #7E72D1 !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(126, 114, 209, 0.3);
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(126, 114, 209, 0.25);
+}
+
+/* Responsive spacing for hero buttons */
+@media (max-width: 768px) {
+  #hero .form-group .btn {
+    margin: 5px 0;
+    width: 100%;
+    display: block;
+  }
+  
+  #hero .form-group .btn:first-child {
+    margin-left: 0;
+  }
+}
+
+/*--------------------------------------------------------------
 # Language Toggle Button
 --------------------------------------------------------------*/
 .language-toggle {

@@ -53,7 +53,7 @@ class I18n {
                 'learn_more': 'معرفة المزيد',
                 
                 // Certificates Section
-                'certificates_title': 'شهاداتي ودوراتي',
+                'certificates_title': 'شهادات واختبارات',
                 'cert_attaa_title': 'شهادات العطاء الرقمي',
                 'cert_attaa_ai': 'تطبيقات الذكاء الاصطناعي',
                 'cert_attaa_security': 'استراتيجيات امان الانترنت',
@@ -284,7 +284,7 @@ class I18n {
                 'learn_more': 'Learn More',
                 
                 // Certificates Section
-                'certificates_title': 'My Certificates & Courses',
+                'certificates_title': 'Certificates & Tests',
                 'cert_attaa_title': 'Digital Giving Certificates',
                 'cert_attaa_ai': 'Artificial Intelligence Applications',
                 'cert_attaa_security': 'Internet Security Strategies',

@@ -3315,27 +3315,27 @@ h2.section-title span {
     box-shadow: 0 4px 15px rgba(51, 51, 51, 0.3), 0 0 0 1px rgba(51, 51, 51, 0.1);
 }
 
-/* Ultra Modern Contact Icons - Glass Effect */
+/* Ultra Modern Contact Icons - White Glass Effect */
 .contact-icon-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width: 60px;
     height: 60px;
-    /* Glass background effect */
-    background: rgba(255, 255, 255, 0.1);
+    /* White glass background effect */
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     position: relative;
     overflow: hidden;
     box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
 .contact-icon-link::before {
@@ -3373,15 +3373,15 @@ h2.section-title span {
 
 .contact-icon-link:hover {
     transform: translateY(-8px) scale(1.1);
-    /* Enhanced glass effect on hover */
-    background: rgba(255, 255, 255, 0.15);
+    /* Enhanced white glass effect on hover */
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(255, 255, 255, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .contact-icon-link:hover .contact-icon {
@@ -3389,26 +3389,26 @@ h2.section-title span {
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
 }
 
-/* Full Contact Item Link - Glass Effect */
+/* Full Contact Item Link - White Glass Effect */
 .contact-item-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    /* Glass background effect */
-    background: rgba(255, 255, 255, 0.1);
+    /* White glass background effect */
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     position: relative;
     overflow: hidden;
     box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
     width: 100%;
     margin: 10px 0;
 }
@@ -3448,15 +3448,15 @@ h2.section-title span {
 
 .contact-item-link:hover {
     transform: translateY(-8px) scale(1.02);
-    /* Enhanced glass effect on hover */
-    background: rgba(255, 255, 255, 0.15);
+    /* Enhanced white glass effect on hover */
+    background: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.4),
-        0 0 0 1px rgba(255, 255, 255, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 20px 40px rgba(0, 0, 0, 0.3),
+        0 0 0 1px rgba(255, 255, 255, 0.3),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .contact-item-link:hover .contact-text {
@@ -3495,119 +3495,119 @@ h2.section-title span {
     transition: all 0.3s ease;
 }
 
-/* Email Link Styling - Glass Effect */
+/* Email Link Styling - White Glass Effect */
 .email-link {
-    background: rgba(102, 126, 234, 0.2) !important;
+    background: rgba(255, 255, 255, 0.25) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(102, 126, 234, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
     box-shadow: 
-        0 8px 32px rgba(102, 126, 234, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05) !important;
 }
 
 .email-link:hover {
-    background: rgba(102, 126, 234, 0.3) !important;
+    background: rgba(255, 255, 255, 0.35) !important;
     backdrop-filter: blur(15px) !important;
     -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(102, 126, 234, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.45) !important;
     box-shadow: 
-        0 20px 40px rgba(102, 126, 234, 0.5),
-        0 0 0 1px rgba(102, 126, 234, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
 }
 
-/* LinkedIn Link Styling - Glass Effect */
+/* LinkedIn Link Styling - White Glass Effect */
 .linkedin-link {
-    background: rgba(0, 119, 181, 0.2) !important;
+    background: rgba(255, 255, 255, 0.25) !important;
     backdrop-filter: blur(10px) !important;
     -webkit-backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(0, 119, 181, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
     box-shadow: 
-        0 8px 32px rgba(0, 119, 181, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05) !important;
 }
 
 .linkedin-link:hover {
-    background: rgba(0, 119, 181, 0.3) !important;
+    background: rgba(255, 255, 255, 0.35) !important;
     backdrop-filter: blur(15px) !important;
     -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(0, 119, 181, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.45) !important;
     box-shadow: 
-        0 20px 40px rgba(0, 119, 181, 0.5),
-        0 0 0 1px rgba(0, 119, 181, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3) !important;
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5) !important;
 }
 
-/* Email Icon - Glass Effect with Blue Tint */
+/* Email Icon - White Glass Effect */
 .contact-icon-link:has(.bi-envelope) {
-    background: rgba(102, 126, 234, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(102, 126, 234, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     box-shadow: 
-        0 8px 32px rgba(102, 126, 234, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
 .contact-icon-link:has(.bi-envelope):hover {
-    background: rgba(102, 126, 234, 0.3);
+    background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(102, 126, 234, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 
-        0 20px 40px rgba(102, 126, 234, 0.5),
-        0 0 0 1px rgba(102, 126, 234, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* X (Twitter) Icon - Glass Effect with Dark Tint */
+/* X (Twitter) Icon - White Glass Effect */
 .contact-icon-link:has(.bi-twitter) {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.4),
-        inset 0 1px 0 rgba(255, 255, 255, 0.1),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
 .contact-icon-link:has(.bi-twitter):hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 
-        0 20px 40px rgba(0, 0, 0, 0.6),
-        0 0 0 1px rgba(255, 255, 255, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
-/* LinkedIn Icon - Glass Effect with Blue Tint */
+/* LinkedIn Icon - White Glass Effect */
 .contact-icon-link:has(.bi-linkedin) {
-    background: rgba(0, 119, 181, 0.2);
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(0, 119, 181, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.35);
     box-shadow: 
-        0 8px 32px rgba(0, 119, 181, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.2),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.05);
 }
 
 .contact-icon-link:has(.bi-linkedin):hover {
-    background: rgba(0, 119, 181, 0.3);
+    background: rgba(255, 255, 255, 0.35);
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(0, 119, 181, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.45);
     box-shadow: 
-        0 20px 40px rgba(0, 119, 181, 0.5),
-        0 0 0 1px rgba(0, 119, 181, 0.3),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .footer-bottom {

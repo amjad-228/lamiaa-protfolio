@@ -1,7 +1,7 @@
 // نظام الترجمة للموقع - i18n System
 class I18n {
     constructor() {
-        this.currentLanguage = localStorage.getItem('language') || 'ar';
+        this.currentLanguage = localStorage.getItem('language') || 'en';
         this.translations = {
             ar: {
                 // Header & Navigation
@@ -19,6 +19,7 @@ class I18n {
                 'hero_name': 'لمياء العمري',
                 'hero_title': 'علوم حاسب',
                 'hero_contact_btn': 'تواصل',
+                'hero_download_btn': 'تحميل السيرة الذاتية',
                 
                 // About Section
                 'about_title': 'تعريف عني',
@@ -57,6 +58,9 @@ class I18n {
                 'cert_attaa_ai': 'تطبيقات الذكاء الاصطناعي',
                 'cert_attaa_security': 'استراتيجيات امان الانترنت',
                 'cert_attaa_future': 'مستقبل التوظيف والمهارات اللازمة',
+                'cert_qiyas_title': 'اختبارات قياس',
+                'cert_qiyas_step': 'اختبار ستيب كفايات اللغة الإنجليزية: الدرجة 83',
+                'cert_qiyas_qudurat': 'اختبار القدرات العامة للتخصصات العلمية: الدرجة 83',
                 'cert_doroob_title': 'شهادات هدف',
                 'cert_doroob_presentations': 'إنشاء عروض تقديمية',
                 'cert_doroob_skills': 'المهارات الأساسية للعمل',
@@ -214,6 +218,12 @@ class I18n {
                 'rec_7_title': 'توصية محاضر في قسم علوم وهندسة الحاسب مقرر الرسم بالحاسب',
                 'rec_8_title': 'توصية محاضر في قسم الرياضيات مقرر الاحتمال والاحصاء للمهندسين',
                 
+                // Qiyas Tests
+                'qiyas_page_title': 'اختبارات قياس - لمياء العمري',
+                'qiyas_org': 'قياس',
+                'qiyas_step_title': 'اختبار ستيب كفايات اللغة الإنجليزية',
+                'qiyas_qudurat_title': 'اختبار القدرات العامة للتخصصات العلمية',
+                
                 // Aiamen (Volunteer)
                 'aiamen_page_title': 'شهادة تطوع - لمياء العمري',
                 'aiamen_title': 'شهادة تطوع - أيامن',
@@ -240,6 +250,7 @@ class I18n {
                 'hero_name': 'Lamyaa Al-Amri',
                 'hero_title': 'Computer Science',
                 'hero_contact_btn': 'Contact',
+                'hero_download_btn': 'Download Resume',
                 
                 // About Section
                 'about_title': 'About Me',
@@ -278,6 +289,9 @@ class I18n {
                 'cert_attaa_ai': 'Artificial Intelligence Applications',
                 'cert_attaa_security': 'Internet Security Strategies',
                 'cert_attaa_future': 'Future of Employment and Required Skills',
+                'cert_qiyas_title': 'Qiyas Tests',
+                'cert_qiyas_step': 'STEP English Proficiency Test: Score 83',
+                'cert_qiyas_qudurat': 'General Aptitude Test for Scientific Specializations: Score 83',
                 'cert_doroob_title': 'Hadaf Certificates',
                 'cert_doroob_presentations': 'Creating Presentations',
                 'cert_doroob_skills': 'Basic Work Skills',
@@ -434,6 +448,12 @@ class I18n {
                 'rec_6_title': 'Recommendation from Lecturer in Computer Science and Engineering Department - Theory of Computation Course',
                 'rec_7_title': 'Recommendation from Lecturer in Computer Science and Engineering Department - Computer Graphics Course',
                 'rec_8_title': 'Recommendation from Lecturer in Mathematics Department - Probability and Statistics for Engineers Course',
+                
+                // Qiyas Tests
+                'qiyas_page_title': 'Qiyas Tests - Lamyaa Al-Amri',
+                'qiyas_org': 'Qiyas',
+                'qiyas_step_title': 'STEP English Proficiency Test',
+                'qiyas_qudurat_title': 'General Aptitude Test for Scientific Specializations',
                 
                 // Aiamen (Volunteer)
                 'aiamen_page_title': 'Volunteer Certificate - Lamyaa Al-Amri',

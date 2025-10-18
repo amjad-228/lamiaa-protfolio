@@ -47,6 +47,49 @@ body {
   visibility: visible !important;
 }
 
+/* Hero Buttons Styling */
+#hero .btn {
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 180px;
+}
+
+#hero .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(126, 114, 209, 0.3);
+}
+
+#hero .btn-outline-primary:hover {
+  background-color: #7E72D1;
+  color: white !important;
+}
+
+/* Mobile responsive for hero buttons */
+@media (max-width: 768px) {
+  #hero .btn {
+    min-width: 160px;
+    padding: 10px 20px;
+    margin-bottom: 10px !important;
+  }
+  
+  #hero .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  #hero .btn.me-3 {
+    margin-right: 0 !important;
+  }
+}
+
 /* Fallback font stack for better performance */
 body, h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat-Arabic", "Segoe UI", "Tahoma", "Arial", sans-serif;

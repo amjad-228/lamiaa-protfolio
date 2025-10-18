@@ -3355,8 +3355,8 @@ h2.section-title span {
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -3376,26 +3376,26 @@ h2.section-title span {
     filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.5));
 }
 
-/* Full Contact Item Link - Reduced Height */
+/* Full Contact Item Link - Ultra Transparent */
 .contact-item-link {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 14px;
-    /* More transparent white glass background effect */
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 14px;
+    padding: 6px 10px;
+    /* Ultra transparent white glass background effect */
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     text-decoration: none;
     position: relative;
     overflow: hidden;
     box-shadow: 
-        0 6px 24px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.02);
     width: 100%;
     margin: 2px 0;
     max-width: 240px;
@@ -3424,8 +3424,8 @@ h2.section-title span {
     left: 2px;
     right: 2px;
     bottom: 2px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
-    border-radius: 12px;
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -3435,16 +3435,16 @@ h2.section-title span {
 }
 
 .contact-item-link:hover {
-    transform: translateY(-4px) scale(1.01);
-    /* Enhanced more transparent white glass effect on hover */
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px) scale(1.01);
+    /* Enhanced ultra transparent white glass effect on hover */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 
-        0 12px 24px rgba(0, 0, 0, 0.18),
-        0 0 0 1px rgba(255, 255, 255, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25);
 }
 
 .contact-item-link:hover .contact-text {
@@ -3467,7 +3467,7 @@ h2.section-title span {
     font-weight: 500;
     transition: all 0.3s ease;
     flex: 1;
-    margin-right: 10px;
+    margin-right: 6px;
 }
 
 .contact-item-link .contact-icon-link {
@@ -3483,40 +3483,40 @@ h2.section-title span {
     transition: all 0.3s ease;
 }
 
-/* Email Link Styling - More Transparent White Glass Effect */
+/* Email Link Styling - Ultra Transparent White Glass Effect */
 .email-link {
-    background: rgba(255, 255, 255, 0.12) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
     box-shadow: 
-        0 6px 24px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.03) !important;
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.02) !important;
     max-width: 260px !important;
 }
 
 .email-link:hover {
-    background: rgba(255, 255, 255, 0.18) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.32) !important;
+    background: rgba(255, 255, 255, 0.09) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
     box-shadow: 
-        0 16px 32px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
 }
 
-/* LinkedIn Link Styling - More Transparent White Glass Effect */
+/* LinkedIn Link Styling - Ultra Transparent White Glass Effect */
 .linkedin-link {
-    background: rgba(255, 255, 255, 0.12) !important;
-    backdrop-filter: blur(10px) !important;
-    -webkit-backdrop-filter: blur(10px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.22) !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    backdrop-filter: blur(8px) !important;
+    -webkit-backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
     box-shadow: 
-        0 6px 24px rgba(0, 0, 0, 0.15),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.03) !important;
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.02) !important;
     max-width: 200px !important;
 }
 
@@ -3533,14 +3533,14 @@ h2.section-title span {
 }
 
 .linkedin-link:hover {
-    background: rgba(255, 255, 255, 0.18) !important;
-    backdrop-filter: blur(15px) !important;
-    -webkit-backdrop-filter: blur(15px) !important;
-    border: 1px solid rgba(255, 255, 255, 0.32) !important;
+    background: rgba(255, 255, 255, 0.09) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
     box-shadow: 
-        0 16px 32px rgba(0, 0, 0, 0.2),
-        0 0 0 1px rgba(255, 255, 255, 0.25),
-        inset 0 1px 0 rgba(255, 255, 255, 0.4) !important;
+        0 8px 20px rgba(0, 0, 0, 0.12),
+        0 0 0 1px rgba(255, 255, 255, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.25) !important;
 }
 
 /* Email Icon - No Background */

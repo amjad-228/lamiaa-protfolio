@@ -3398,7 +3398,7 @@ h2.section-title span {
         inset 0 -1px 0 rgba(0, 0, 0, 0.03);
     width: 100%;
     margin: 2px 0;
-    max-width: 280px;
+    max-width: 240px;
 }
 
 .contact-item-link::before {
@@ -3493,6 +3493,7 @@ h2.section-title span {
         0 6px 24px rgba(0, 0, 0, 0.15),
         inset 0 1px 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 rgba(0, 0, 0, 0.03) !important;
+    max-width: 260px !important;
 }
 
 .email-link:hover {
@@ -3516,6 +3517,19 @@ h2.section-title span {
         0 6px 24px rgba(0, 0, 0, 0.15),
         inset 0 1px 0 rgba(255, 255, 255, 0.3),
         inset 0 -1px 0 rgba(0, 0, 0, 0.03) !important;
+    max-width: 200px !important;
+}
+
+/* Twitter/X Link Styling - Smaller Width */
+.contact-item-link:has(.bi-twitter) {
+    max-width: 200px !important;
+}
+
+/* Ensure text doesn't overflow in smaller cards */
+.contact-item-link .contact-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .linkedin-link:hover {
@@ -4806,6 +4820,20 @@ html[lang="ar"] .back-button-container {
         padding: 10px 15px;
     }
     
+    /* Adjust card widths for mobile */
+    .contact-item-link {
+        max-width: 220px !important;
+    }
+    
+    .email-link {
+        max-width: 240px !important;
+    }
+    
+    .linkedin-link,
+    .contact-item-link:has(.bi-twitter) {
+        max-width: 180px !important;
+    }
+    
     .contact-text {
         font-size: 14px;
     }
@@ -4851,6 +4879,20 @@ html[lang="ar"] .back-button-container {
         min-width: 180px;
         padding: 8px 12px;
         gap: 8px;
+    }
+    
+    /* Further adjust card widths for small mobile */
+    .contact-item-link {
+        max-width: 200px !important;
+    }
+    
+    .email-link {
+        max-width: 220px !important;
+    }
+    
+    .linkedin-link,
+    .contact-item-link:has(.bi-twitter) {
+        max-width: 160px !important;
     }
     
     .contact-text {

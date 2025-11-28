@@ -16,7 +16,7 @@ class I18n {
                 'nav_contact': 'تواصل معي',
                 
                 // Hero Section
-                'hero_name': 'لمياء العمري',
+                'hero_name': 'حاسبي باقي الفلوس الي عليك',
                 'hero_title': 'علوم حاسب',
                 'hero_contact_btn': 'تواصل',
                 'hero_download_btn': 'تحميل السيرة الذاتية',

@@ -60,8 +60,9 @@ class I18n {
                 'cert_attaa_future': 'مستقبل التوظيف والمهارات اللازمة',
                 'cert_aws_title': 'شهادة احترافية من AWS',
                 'cert_qiyas_title': 'اختبارات قياس',
+                'cert_qiyas_1': 'اختبار قدرات الجامعيين : الدرجه 84',
                 'cert_qiyas_step': 'اختبار ستيب كفايات اللغة الإنجليزية: الدرجة 83',
-                'cert_qiyas_qudurat': 'اختبار القدرات العامة للتخصصات العلمية: الدرجة 83',
+                'cert_qiyas_qudurat': 'اختبار القدرات العامة للتخصصات العلمية: الدرجة 88',
                 'cert_doroob_title': 'شهادات هدف',
                 'cert_doroob_presentations': 'إنشاء عروض تقديمية',
                 'cert_doroob_skills': 'المهارات الأساسية للعمل',
@@ -297,9 +298,11 @@ class I18n {
                 'cert_attaa_ai': 'Artificial Intelligence Applications',
                 'cert_attaa_security': 'Internet Security Strategies',
                 'cert_attaa_future': 'Future of Employment and Required Skills',
+                'cert_aws_title': 'Professional Certificate from AWS',
                 'cert_qiyas_title': 'Qiyas Tests',
+                'cert_qiyas_1': 'University Students Aptitude Test: Score 84',
                 'cert_qiyas_step': 'STEP English Proficiency Test: Score 83',
-                'cert_qiyas_qudurat': 'General Aptitude Test for Scientific Specializations: Score 83',
+                'cert_qiyas_qudurat': 'General Aptitude Test for Scientific Specializations: Score 88',
                 'cert_doroob_title': 'Hadaf Certificates',
                 'cert_doroob_presentations': 'Creating Presentations',
                 'cert_doroob_skills': 'Basic Work Skills',
@@ -457,9 +460,15 @@ class I18n {
                 'rec_7_title': 'Recommendation from Lecturer in Computer Science and Engineering Department - Computer Graphics Course',
                 'rec_8_title': 'Recommendation from Lecturer in Mathematics Department - Probability and Statistics for Engineers Course',
                 
+                // AWS cer
+                'aws_page_title': 'Professional Certificate AWS Certified Cloud Practitioner',
+                'aws_org': 'AWS',
+                'aws_cert_1_desc': 'A solid foundation in cloud computing was established through obtaining international professional accreditation. I mastered core cloud concepts and security standards, and demonstrated proficiency in operational and pricing strategies. This achievement is a crucial step to keep pace with rapidly evolving technological advancements.',
+
                 // Qiyas Tests
                 'qiyas_page_title': 'Qiyas Tests - Lamyaa Al-Amri',
                 'qiyas_org': 'Qiyas',
+                'qiyas_cer2_title': 'University Students Aptitude Test',
                 'qiyas_step_title': 'STEP English Proficiency Test',
                 'qiyas_qudurat_title': 'General Aptitude Test for Scientific Specializations',
                 
